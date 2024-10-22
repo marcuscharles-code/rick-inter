@@ -1,9 +1,10 @@
 import Hero from '../pages/Hero';
 import About from '../pages/About';
+import OurTeam from '../pages/OurTeam';
 import Services from '../pages/Services';
 import ContactUs from '../pages/ContactUs';
-// import OurTeam from '../pages/OurTeam';
-// import ReviewPage from '../pages/ReviewPage';
+import LearnMore from '../pages/LearnMore';
+import ReviewPage from '../pages/ReviewPage';
 import useDocumentTitle from '../helpers/useDocumentTitle';
 
 export default function Home() {
@@ -13,11 +14,11 @@ export default function Home() {
     <main>
       <Hero />
       <About />
-      <Services />   
+      <Services />
       <ContactUs />
-      {/* <ReviewPage /> */}
-      {/* <OurTeam /> */}
-     
+      <ReviewPage />
+      <OurTeam />
+      <LearnMore />
     </main>
   );
 }

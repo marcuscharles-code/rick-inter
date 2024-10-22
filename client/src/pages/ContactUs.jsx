@@ -3,7 +3,7 @@ import '../assets/css/Contact.css'
 
 function ContactUs() {
     return (
-        <div className='contact-us-container'>
+        <section className='contact-us-container'>
             <div className='contact-image'>
                 <img src={img2} alt='CEO' />
             </div>
@@ -50,7 +50,7 @@ function ContactUs() {
                     </button>
                 </form>
             </div>
-        </div>
+        </section>
     );
 }
 

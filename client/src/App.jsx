@@ -1,6 +1,9 @@
 import './App.css'
 import Home from './routes/Home';
+import About from './routes/About';
 import Service from './routes/Service';
+import Contact from './routes/Contact';
+import Portfolio from './routes/Portfolio';
 import Layout from './components/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { TitleProvider } from './helpers/TitleContext';
@@ -14,7 +17,10 @@ function App() {
         <Layout>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
             <Route path='/service' element={<Service />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/portfolio' element={<Portfolio />} />
           </Routes>
         </Layout>
       </Router>
