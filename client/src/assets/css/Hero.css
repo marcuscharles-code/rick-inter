@@ -1,0 +1,199 @@
+.hero {
+  top: 0;
+  width: 100%;
+  height: 70dvh;
+  display: grid;
+  position: absolute;
+  place-items: center;
+  align-content: space-between;
+}
+
+.hero > img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.hero > span {
+  inset: 0;
+  opacity: 0.5;
+  position: absolute;
+  background: #1a202e;
+}
+
+.hero .hero-nav {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  position: relative;
+  padding: 4rem 1rem 1rem;
+  justify-content: space-between;
+  transition: top 0.3s ease-in-out;
+}
+
+.hero-nav.sticky {
+  top: 0;
+  z-index: 9;
+  padding: 1rem;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  background-color: rgba(102, 0, 102, 0.8);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero-nav .hero-logo {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-nav .hero-logo h4 {
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+.hero-nav .hero-menu label {
+  cursor: pointer;
+}
+
+.hero-nav .hero-menu label input {
+  display: none;
+}
+
+.hero-nav .hero-menu label svg {
+  height: 3em;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-nav .hero-menu label svg path {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-nav .hero-menu label svg path:first-child {
+  stroke-dasharray: 12 63;
+}
+
+.hero-nav .hero-menu label input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hero-nav .hero-menu label input:checked + svg path:first-child {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+.hero-text {
+  z-index: 1;
+  color: #fff;
+  inset: 50% auto;
+  position: absolute;
+}
+
+.hero-text mark {
+  color: var(--orange);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.hero-text h2 {
+  opacity: 0.08;
+  line-height: 1;
+  font-size: 6rem;
+  font-weight: 400;
+  translate: 0 -50%;
+  position: absolute;
+  inset: 50% auto auto;
+  font-family: Anton, sans-serif;
+}
+
+.hero-text h3 {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 400;
+  font-family: Anton, sans-serif;
+}
+
+.hero-text p {
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.hero .hero-overlay {
+  top: 50%;
+  gap: 40px;
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  padding: 60px 0;
+  position: relative;
+  background: var(--purple);
+}
+
+.hero-overlay div {
+  color: #fff;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.hero-overlay div h3 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+  font-family: Anton, sans-serif;
+}
+
+.hero-overlay div p {
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 700px) {
+  .hero {
+    height: 100dvh;
+  }
+
+  .hero:has(.hero-nav.sticky) {
+    align-items: end;
+    align-content: normal;
+  }
+
+  .hero-text h2 {
+    font-size: 25rem;
+    translate: -20% -50%;
+  }
+
+  .hero-text h3 {
+    font-size: 5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+  }
+
+  .hero .hero-overlay {
+    width: 70%;
+    display: flex;
+    padding: 60px;
+    align-items: center;
+  }
+
+  .hero:has(.hero-nav.sticky) .hero-overlay {
+    top: 15%;
+  }
+
+  .hero-overlay div {
+    width: 100%;
+    padding: 0;
+  }
+}

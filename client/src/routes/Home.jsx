@@ -1,11 +1,11 @@
-import NavbarTop from '../components/Navbar'
+import Hero from '../pages/Hero';
+import About from '../pages/About';
 
-function Home() {
+export default function Home() {
   return (
-    <div>
-        <NavbarTop />
-    </div>
-  )
+    <main>
+      <Hero />
+      <About />
+    </main>
+  );
 }
-
-export default Home;
