@@ -1,5 +1,5 @@
 import ModalImage from 'react-modal-image';
-import '../assets/css/Gallery.css'; 
+import '../assets/css/Gallery.css';
 import ceo from '../assets/images/ceo.webp'
 const Gallery = () => {
   const images = [
@@ -26,19 +26,18 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="gallery-container">
-    <p>hey</p>
-     <img src={ceo}/>
+    <section className='gallery'>
+      <img src={ceo} />
       {images.map((image, index) => (
         <ModalImage
           key={index}
           small={image.thumbnail}
           large={image.original}
           alt={image.alt}
-          className="gallery-image"
+          className='gallery-image'
         />
       ))}
-    </div>
+    </section>
   );
 };
 

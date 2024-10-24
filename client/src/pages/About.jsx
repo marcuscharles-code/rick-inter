@@ -41,17 +41,17 @@ function About() {
           </h1>
           <div className='reasons'>
             <div>
-              <mark><FaGreaterThan /></mark> 
+              <mark><FaGreaterThan /></mark>
               <p>Superior precise quality welds</p>
             </div>
             <div>
-              <mark><FaGreaterThan /></mark> 
+              <mark><FaGreaterThan /></mark>
               <p>Welds can be made with little or no filler</p>
             </div>
             <div>
               <mark><FaGreaterThan />
               </mark> <p>Precise control of welding variables</p>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
