@@ -28,7 +28,21 @@ body {
   overflow-x: hidden;
 }
 
-body mark {
+body main {
+  top: 0;
+  width: 100%;
+  display: grid;
+  position: absolute;
+}
+
+body main section {
+  width: 100%;
+  display: grid;
+  position: relative;
+  place-items: center;
+}
+
+body main section mark {
   color: var(--orange);
   font-family: Anton, serif;
   background-color: rgba(0, 0, 0, 0);

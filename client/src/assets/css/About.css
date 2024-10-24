@@ -1,12 +1,9 @@
-/* About Section */
 .about-section {
+  z-index: 2;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 2;
-  position: relative;
-  top: 65rem;
+  justify-content: center;
 }
 
 .abt-img {
