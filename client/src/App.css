@@ -5,11 +5,12 @@
   padding: 0;
   border: none;
   font-weight: 300;
-  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
   transition: all 0.3s ease;
   font-family: Roboto, sans-serif;
+  text-decoration: none !important;
 }
 
 :root {

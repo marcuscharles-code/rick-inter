@@ -30,3 +30,9 @@ header p {
 header p svg {
   fill: var(--orange);
 }
+
+@media all and (min-width: 700px) {
+  header {
+    padding: .6rem 6rem;
+  }
+}

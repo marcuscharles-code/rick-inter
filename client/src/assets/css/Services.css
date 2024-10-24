@@ -1,0 +1,92 @@
+.services-container {
+    position: relative;
+    top: 65rem;
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images//hero.webp) no-repeat center;
+    background-size: cover; 
+    background-attachment: fixed;
+    /* filter: brightness(20%) */
+
+  }
+  
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    padding: 20px;
+  }
+  
+  .services h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .services h1 span {
+    color: var(--orange);
+    font-weight: bold;
+  }
+  
+  .services p {
+    font-size: 1.5rem;
+    color: #fff; 
+    font-weight: 900;
+  }
+  
+  .services div {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .services div h1 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .services div h2 {
+    font-size: 1.8rem;
+    color: var(--orange);
+  }
+  
+  .services div p {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  .services-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+  }
+  .services-list h1{
+    color: #fff;
+    font-size: 5.5rem;
+    font-weight: bold;
+  }
+  .services-list h2{
+    color: var(--orange);
+    font-weight: 900;
+    font-size: 2rem;
+  }
+  .services-list h2 > span{
+    color: #fff;
+    font-weight: 900;
+
+  }
+
+  .services-list h2:hover span{
+    color: var(--orange);
+    transition: color 0.3s ease, font-weight 0.3s ease;
+  }
+  .services-list p{
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center; 
+  }

@@ -1,4 +1,5 @@
 import '../assets/css/Hero.css';
+import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import logo from '../assets/images/logo.png';
 import hero from '../assets/images/hero.webp';
@@ -36,6 +37,15 @@ export default function Hero() {
     },
   ];
 
+  const lists = [
+    { title: 'Home', url: '/' },
+    { title: 'About', url: '/about' },
+    { title: 'Services', url: '/services' },
+    { title: 'Portfolio', url: '/portfolio' },
+    { title: 'Contact', url: '/contact' },
+
+  ]
+
   return (
     <section className='hero'>
       <img src={hero} alt='bg' />
@@ -45,7 +55,14 @@ export default function Hero() {
           <img src={logo} alt='logo' width={50} />
           <h4>Rick</h4>
         </div>
-        <div className='hero-menu'>
+        <div className='hero-list'>
+          <ul>
+            {lists.map((list, index) => (
+              <li key={index}>
+                <NavLink to={list.url}>{list.title}</NavLink>
+              </li>
+            ))}
+          </ul>
           <label>
             <input type='checkbox' />
             <svg viewBox='0 0 32 32'>

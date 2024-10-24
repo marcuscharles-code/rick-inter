@@ -54,20 +54,46 @@
   color: var(--orange);
 }
 
-.hero-nav .hero-menu label {
+.hero-nav .hero-list {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-list ul {
+  gap: 10px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero-list ul li {
+  margin: 0 16px;
+}
+
+.hero-list ul li a {
+  color: #fff;
+}
+
+.hero-list ul li a:hover,
+.hero-list ul li a.active {
+  color: var(--orange);
+}
+
+.hero-list label {
   cursor: pointer;
 }
 
-.hero-nav .hero-menu label input {
+.hero-list label input {
   display: none;
 }
 
-.hero-nav .hero-menu label svg {
-  height: 3em;
+.hero-list label svg {
+  height: 2.5em;
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-nav .hero-menu label svg path {
+.hero-list label svg path {
   fill: none;
   stroke: #fff;
   stroke-width: 3;
@@ -77,15 +103,15 @@
     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-nav .hero-menu label svg path:first-child {
+.hero-list label svg path:first-child {
   stroke-dasharray: 12 63;
 }
 
-.hero-nav .hero-menu label input:checked + svg {
+.hero-list label input:checked + svg {
   transform: rotate(-45deg);
 }
 
-.hero-nav .hero-menu label input:checked + svg path:first-child {
+.hero-list label input:checked + svg path:first-child {
   stroke-dasharray: 20 300;
   stroke-dashoffset: -32.42;
 }
@@ -114,8 +140,8 @@
 }
 
 .hero-text h3 {
-  font-size: 2rem;
   line-height: 1;
+  font-size: 2rem;
   font-weight: 400;
   font-family: Anton, sans-serif;
 }
@@ -168,6 +194,14 @@
     align-content: normal;
   }
 
+  .hero .hero-nav {
+    padding: 4rem 6rem 1rem;
+  }
+
+  .hero .hero-nav.sticky {
+    padding: 1.5rem 6rem;
+  }
+
   .hero-text h2 {
     font-size: 25rem;
     translate: -20% -50%;
@@ -193,7 +227,7 @@
   }
 
   .hero-overlay div {
-    width: 100%;
     padding: 0;
+    width: 100%;
   }
 }
