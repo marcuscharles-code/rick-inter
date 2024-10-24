@@ -1,3 +1,4 @@
+
 import '../assets/css/About.css';
 import bg from '../assets/images/bg.webp';
 import ceo from '../assets/images/ceo.webp';
@@ -12,9 +13,8 @@ function About() {
       </div>
       <div className='abt-content'>
         <div className='founder-name'>
-          <span>
-            {' '}
-            Preye <mark>Allison</mark>{' '}
+          <span>            
+            Preye <mark>Allison</mark>
           </span>
           <span>Founder</span>
         </div>
