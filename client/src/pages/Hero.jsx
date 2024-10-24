@@ -6,10 +6,15 @@ import hero from '../assets/images/hero.webp';
 
 export default function Hero() {
   const [isSticky, setIsSticky] = useState(false);
+  const [isOverlayVisible, setIsOverlayVisible] = useState(false);
 
   const handleScroll = () => {
     const offset = window.scrollY;
     setIsSticky(offset > 0);
+  };
+
+  const handleOverlayToggle = () => {
+    setIsOverlayVisible(!isOverlayVisible);
   };
 
   useEffect(() => {
@@ -43,8 +48,7 @@ export default function Hero() {
     { title: 'Services', url: '/services' },
     { title: 'Portfolio', url: '/portfolio' },
     { title: 'Contact', url: '/contact' },
-
-  ]
+  ];
 
   return (
     <section className='hero'>
@@ -55,6 +59,12 @@ export default function Hero() {
           <img src={logo} alt='logo' width={50} />
           <h4>Rick</h4>
         </div>
+        {isOverlayVisible && (
+          <div className='hero-overlay'>
+            <div></div>
+            <div></div>
+          </div>
+        )}
         <div className='hero-list'>
           <ul>
             {lists.map((list, index) => (
@@ -64,7 +74,7 @@ export default function Hero() {
             ))}
           </ul>
           <label>
-            <input type='checkbox' />
+            <input type='checkbox' onChange={handleOverlayToggle} />
             <svg viewBox='0 0 32 32'>
               <path d='M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22'></path>
               <path d='M7 16 27 16'></path>
@@ -77,7 +87,7 @@ export default function Hero() {
         <h3>Welding <mark>&amp;</mark> Iron Works</h3>
         <p>We Build <mark>The Best.</mark></p>
       </div>
-      <div className='hero-overlay'>
+      <div className='hero-modal'>
         {items.map((item) => (
           <div key={item.num}>
             <h3>0{item.num}</h3>

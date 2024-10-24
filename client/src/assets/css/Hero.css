@@ -56,28 +56,23 @@
 
 .hero-nav .hero-list {
   gap: 40px;
+  z-index: 1;
   display: flex;
   align-items: center;
+}
+
+.hero-nav .hero-overlay + .hero-list {
+  inset: 0;
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  position: absolute;
+  background: #23222d;
+  justify-content: flex-end;
 }
 
 .hero-list ul {
-  gap: 10px;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-.hero-list ul li {
-  margin: 0 16px;
-}
-
-.hero-list ul li a {
-  color: #fff;
-}
-
-.hero-list ul li a:hover,
-.hero-list ul li a.active {
-  color: var(--orange);
+  display: none;
 }
 
 .hero-list label {
@@ -116,19 +111,30 @@
   stroke-dashoffset: -32.42;
 }
 
+.hero-nav .hero-overlay {
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 0 4px 3px rgba(50, 50, 50, 0.05);
+}
+
 .hero-text {
-  z-index: 1;
   color: #fff;
   inset: 50% auto;
+  user-select: none;
   position: absolute;
 }
 
 .hero-text mark {
   color: var(--orange);
+  font-family: Anton, serif;
   background-color: rgba(0, 0, 0, 0);
 }
 
 .hero-text h2 {
+  z-index: 1;
   opacity: 0.08;
   line-height: 1;
   font-size: 6rem;
@@ -155,7 +161,7 @@
   text-transform: uppercase;
 }
 
-.hero .hero-overlay {
+.hero .hero-modal {
   top: 50%;
   gap: 40px;
   width: 90%;
@@ -166,19 +172,19 @@
   background: var(--purple);
 }
 
-.hero-overlay div {
+.hero-modal div {
   color: #fff;
   padding: 0 40px;
   text-align: center;
 }
 
-.hero-overlay div h3 {
+.hero-modal div h3 {
   font-size: 4rem;
   letter-spacing: 3px;
   font-family: Anton, sans-serif;
 }
 
-.hero-overlay div p {
+.hero-modal div p {
   font-weight: 700;
   letter-spacing: 0.4em;
   text-transform: uppercase;
@@ -202,6 +208,53 @@
     padding: 1.5rem 6rem;
   }
 
+  .hero-nav .hero-overlay + .hero-list {
+    padding: 0;
+    height: inherit;
+    position: relative;
+    background: transparent;
+  }
+
+  .hero-list ul {
+    gap: 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-list ul li {
+    margin: 0 16px;
+  }
+
+  .hero-list ul li a {
+    color: #fff;
+  }
+
+  .hero-list ul li a:hover,
+  .hero-list ul li a.active {
+    color: var(--orange);
+  }
+
+  .hero-nav .hero-overlay {
+    z-index: 9;
+    width: 325px;
+    inset: 0 0 0 auto;
+    box-shadow: 0 0 4px 3px rgba(50, 50, 50, 0.05);
+  }
+
+  .hero-nav .hero-overlay div::-webkit-scrollbar {
+    opacity: 0;
+    width: 7px;
+    height: 200vh;
+    border-radius: 1px;
+    transition: opacity 0.2s linear;
+    background: rgba(127, 127, 127, 0.4);
+  }
+
+  .hero-nav .hero-overlay:hover div::-webkit-scrollbar {
+    opacity: 0.7;
+  }
+
   .hero-text h2 {
     font-size: 25rem;
     translate: -20% -50%;
@@ -215,18 +268,18 @@
     font-size: 1.5rem;
   }
 
-  .hero .hero-overlay {
+  .hero .hero-modal {
     width: 70%;
     display: flex;
     padding: 60px;
     align-items: center;
   }
 
-  .hero:has(.hero-nav.sticky) .hero-overlay {
+  .hero:has(.hero-nav.sticky) .hero-modal {
     top: 15%;
   }
 
-  .hero-overlay div {
+  .hero-modal div {
     padding: 0;
     width: 100%;
   }
