@@ -27,3 +27,9 @@
 body {
   overflow-x: hidden;
 }
+
+body mark {
+  color: var(--orange);
+  font-family: Anton, serif;
+  background-color: rgba(0, 0, 0, 0);
+}

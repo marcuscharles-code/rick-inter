@@ -1,8 +1,8 @@
 import '../assets/css/Hero.css';
 import { NavLink } from 'react-router-dom';
-import { useState, useEffect, useRef } from 'react';
 import logo from '../assets/images/logo.png';
 import hero from '../assets/images/hero.webp';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Hero() {
   const [isSticky, setIsSticky] = useState(false);

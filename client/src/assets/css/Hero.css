@@ -24,7 +24,7 @@
 }
 
 .hero .hero-nav {
-  z-index: 1;
+  z-index: 5;
   width: 100%;
   display: flex;
   position: relative;
@@ -136,12 +136,6 @@
   position: absolute;
 }
 
-.hero-text mark {
-  color: var(--orange);
-  font-family: Anton, serif;
-  background-color: rgba(0, 0, 0, 0);
-}
-
 .hero-nav:has(div.hero-overlay) + .hero-text h2 {
   z-index: -1;
 }
@@ -194,6 +188,7 @@
 .hero-modal div h3 {
   font-size: 4rem;
   letter-spacing: 3px;
+  color: var(--orange);
   font-family: Anton, sans-serif;
 }
 

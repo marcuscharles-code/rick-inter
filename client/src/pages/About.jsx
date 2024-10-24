@@ -1,24 +1,24 @@
-import ceo from "../assets/images/ceo.webp";
-import bg from "../assets/images/bg.webp";
-import "../assets/css/About.css";
-import { FaGreaterThan } from "react-icons/fa";
+import '../assets/css/About.css';
+import bg from '../assets/images/bg.webp';
+import ceo from '../assets/images/ceo.webp';
+import { FaGreaterThan } from 'react-icons/fa';
 
 function About() {
   return (
-    <section className="about-section">
-      <div className="abt-img">
-        <img className="img-top" src={bg} alt="Background" />
-        <img className="img-bottom" src={ceo} alt="CEO" />
+    <section className='about-section'>
+      <div className='abt-img'>
+        <img className='img-top' src={bg} alt='Background' />
+        <img className='img-bottom' src={ceo} alt='CEO' />
       </div>
-      <div className="abt-content">
-        <div className="founder-name">
+      <div className='abt-content'>
+        <div className='founder-name'>
           <span>
-            {" "}
-            Preye <mark>Allison</mark>{" "}
+            {' '}
+            Preye <mark>Allison</mark>{' '}
           </span>
           <span>Founder</span>
         </div>
-        <div className="about-txt">
+        <div className='about-txt'>
           <p>
             Since 1999, Weldo has been servicing all of San Diego. Our mission
             is to work diligently and efficiently with every client ensuring a
@@ -35,11 +35,11 @@ function About() {
             ideas in iron metal works and ornamentals.
           </p>
         </div>
-        <div className="why-us">
+        <div className='why-us'>
           <h1>
             Why <mark>Choose Us</mark>
           </h1>
-          <div className="reasons">
+          <div className='reasons'>
             <div>
               <mark><FaGreaterThan /></mark> 
               <p>Superior precise quality welds</p>

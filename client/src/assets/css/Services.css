@@ -1,92 +1,104 @@
-.services-container {
-    position: relative;
-    top: 65rem;
-    width: 100vw;
-    height: auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url(../images//hero.webp) no-repeat center;
-    background-size: cover; 
-    background-attachment: fixed;
-    /* filter: brightness(20%) */
+.services {
+  gap: 30px;
+  top: 65rem;
+  height: auto;
+  display: grid;
+  padding: 50px 0;
+  position: relative;
+  place-items: center;
+  background: url("../images/hero.webp") no-repeat 50% -20px / cover fixed;
+}
 
-  }
-  
+.services span {
+  inset: 0;
+  opacity: 0.5;
+  position: absolute;
+  background: #1a202e;
+}
+
+.services .services-heading {
+  display: grid;
+  color: #fff;
+  position: relative;
+  place-items: center;
+}
+
+.services .services-heading:after {
+  content: "";
+  height: 2px;
+  width: 100px;
+  display: block;
+  background: var(--orange);
+}
+
+.services .services-heading h2 {
+  font-weight: 400;
+  font-size: 2.4rem;
+  font-family: Anton, sans-serif;
+}
+
+.services .services-heading p {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.services .services-container {
+  z-index: 1;
+  width: 100%;
+  display: grid;
+  margin: 0 auto;
+}
+
+.services .services-container div {
+  gap: 5px;
+  display: grid;
+  color: #fff;
+  padding: 10px 0;
+  place-items: center;
+}
+
+.services-container div h3 {
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+  font-family: Anton, sans-serif;
+}
+
+.services-container div a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: Anton, sans-serif;
+}
+
+.services-container div a:hover {
+  color: var(--orange);
+}
+
+.services-container div p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media all and (min-width: 700px) {
   .services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    padding: 20px;
-  }
-  
-  .services h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #fff;
-  }
-  
-  .services h1 span {
-    color: var(--orange);
-    font-weight: bold;
-  }
-  
-  .services p {
-    font-size: 1.5rem;
-    color: #fff; 
-    font-weight: 900;
-  }
-  
-  .services div {
-    margin-top: 30px;
-    text-align: center;
-  }
-  
-  .services div h1 {
-    font-size: 2rem;
-    color: #fff;
-  }
-  
-  .services div h2 {
-    font-size: 1.8rem;
-    color: var(--orange);
-  }
-  
-  .services div p {
-    color: #fff;
-    font-size: 1.2rem;
-  }
-  
-  .services-list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-  }
-  .services-list h1{
-    color: #fff;
-    font-size: 5.5rem;
-    font-weight: bold;
-  }
-  .services-list h2{
-    color: var(--orange);
-    font-weight: 900;
-    font-size: 2rem;
-  }
-  .services-list h2 > span{
-    color: #fff;
-    font-weight: 900;
-
+    padding: 100px 0;
   }
 
-  .services-list h2:hover span{
-    color: var(--orange);
-    transition: color 0.3s ease, font-weight 0.3s ease;
+  .services .services-heading h2 {
+    font-size: 3.125rem;
   }
-  .services-list p{
-    font-size: 1rem;
-    font-weight: bolder;
-    text-align: center; 
+
+  .services .services-container {
+    width: 65%;
+    grid-template-columns: repeat(3, 1fr);
   }
+
+  .services .services-container div {
+    padding: 30px 50px;
+  }
+}
