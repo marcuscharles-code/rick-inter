@@ -121,6 +121,14 @@
   box-shadow: 0 0 4px 3px rgba(50, 50, 50, 0.05);
 }
 
+.hero-nav .hero-overlay div:first-child {
+  display: none;
+}
+
+.hero-nav .hero-overlay div:last-child {
+  display: block;
+}
+
 .hero-text {
   color: #fff;
   inset: 50% auto;
@@ -241,6 +249,7 @@
   }
 
   .hero-nav .hero-overlay {
+    z-index: 10;
     width: 325px;
     inset: 0 0 0 auto;
     box-shadow: 0 0 4px 3px rgba(50, 50, 50, 0.05);
@@ -257,6 +266,19 @@
 
   .hero-nav .hero-overlay:hover div::-webkit-scrollbar {
     opacity: 0.7;
+  }
+
+  .hero-nav .hero-overlay div {
+    width: 325px;
+    height: 50px;
+  }
+
+  .hero-nav .hero-overlay div:first-child {
+    display: block;
+  }
+
+  .hero-nav .hero-overlay div:last-child {
+    display: none;
   }
 
   .hero-nav:has(div.hero-overlay) + .hero-text h2 {
