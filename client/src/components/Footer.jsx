@@ -13,7 +13,7 @@ export default function Footer() {
         <div >
           <div className="footer-company-info">
             <div className='footer-logo-div'>
-              <img src={logo} alt="Company Logo" />
+              <img className='footer-logo' src={logo} alt="Company Logo" />
             </div>
             <h2>Rick</h2>
           </div>
