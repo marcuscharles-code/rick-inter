@@ -1,16 +1,16 @@
 import '../assets/css/Header.css';
-import { FaPhone, FaEnvelope } from 'react-icons/fa6';
+import { MdMail, MdPhoneEnabled } from 'react-icons/md';
 
 export default function Header() {
   return (
     <header>
       <p>
-        <FaEnvelope />
-        <span>info@rickinterservicesng.com</span>
+        <MdMail size={16} />
+        <a href='mailto:info@rickinterservicesng.com'>info@rickinterservicesng.com</a>
       </p>
       <p>
-        <FaPhone />
-        <span>+234 803 723 6306</span>
+        <MdPhoneEnabled size={16} />
+        <a href='tel:+2348037236306'>+234 803 723 6306</a>
       </p>
     </header>
   );

@@ -55,10 +55,10 @@ export default function Hero({ text }) {
       <img src={hero} alt='bg' />
       <span></span>
       <div className={`hero-nav ${isSticky ? 'sticky' : ''}`}>
-        <div className='hero-logo'>
+        <Link className='hero-logo'>
           <img src={logo} alt='logo' width={50} />
           <h4>Rick</h4>
-        </div>
+        </Link>
         {isOverlayVisible && (
           <div className='hero-overlay' ref={overlayRef}>
             <div></div>

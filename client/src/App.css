@@ -4,8 +4,10 @@
   margin: 0;
   padding: 0;
   border: none;
-  font-weight: 300;
+  outline: none;
   list-style: none;
+  font-weight: 300;
+  line-height: 24px;
   box-sizing: border-box;
   scroll-behavior: smooth;
   transition: all 0.3s ease;
@@ -28,6 +30,12 @@ body {
   overflow-x: hidden;
 }
 
+body mark {
+  color: var(--orange);
+  font-family: Anton, serif;
+  background-color: rgba(0, 0, 0, 0);
+}
+
 body main {
   top: 0;
   width: 100%;
@@ -45,10 +53,4 @@ body main section {
 
 body main section img {
   vertical-align: middle;
-}
-
-body main section mark {
-  color: var(--orange);
-  font-family: Anton, serif;
-  background-color: rgba(0, 0, 0, 0);
 }

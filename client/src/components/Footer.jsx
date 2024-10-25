@@ -1,42 +1,53 @@
 import '../assets/css/Footer.css';
 import logo from '../assets/images/logo.png'
-import { FaFacebook, FaYoutube, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
-import { BsTwitterX } from 'react-icons/bs';
-import { LuInstagram } from 'react-icons/lu';
-import { GrLocation } from 'react-icons/gr';
-import { IoMailUnreadSharp } from 'react-icons/io5';
+import { MdEdit, MdMail, MdLocationOn, MdPhoneEnabled } from 'react-icons/md';
+import { FaFacebookF, FaXTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa6';
 
 export default function Footer() {
   return (
     <footer>
       <div className='footer-content'>
-        <div >
-          <div className='footer-company-info'>
-            <div className='footer-logo-div'>
-              <img className='footer-logo' src={logo} alt='Company Logo' />
-            </div>
-            <h2>Rick</h2>
+        <div className='footer-info'>
+          <a href='#'>
+            <img src={logo} alt='logo' width={50} />
+            <h4>Rick</h4>
+          </a>
+          <p>Established in 1989, Welding and Iron Works has become one of the most respected structural, miscellaneous, and ornamental steel fabricators serving Southern California in multi-unit, commercial, and residential projects.</p>
+          <div>
+            <a href=''><FaFacebookF size={18} /></a>
+            <a href=''><FaXTwitter size={18} /></a>
+            <a href=''><FaLinkedinIn size={18} /></a>
+            <a href=''><FaInstagram size={18} /></a>
+            <a href=''><FaYoutube size={18} /></a>
           </div>
-          <p className='footer-company-description'>
-            Established in 1989, Welding and Iron Works has become one of the most respected structural, miscellaneous, and ornamental steel fabricators serving Southern California in multi-unit, commercial, and residential projects.
+        </div>
+        <div className='footer-contact'>
+          <h4><mark>Contact</mark> Us</h4>
+          <p>
+            <MdLocationOn />
+            <span>
+            2231 Johnstown Road Bensenville, IL 60106</span>
           </p>
-          <div className='footer-social-icons'>
-            <FaFacebook />
-            <BsTwitterX />
-            <LuInstagram />
-            <FaYoutube />
-            <FaLinkedin />
+          <p>
+            <MdPhoneEnabled />
+            <a href='tel:+2348037236306'>+234 803 723 6306</a>
+          </p>
+          <p>
+            <MdMail />
+            <a href='mailto:info@rickinterservicesng.com'>info@rickinterservicesng.com</a>
+          </p>
+        </div>
+        <div className='footer-news'>
+          <h4><mark>Subscribe</mark> Us</h4>
+          <p>Stay updated with our latest news. We promise not to spam!</p>
+          <div>
+            <input type='email' placeholder='Your Email' />
+            <button><MdEdit /></button>
           </div>
         </div>
-
-        <div className='footer-contact-info'>
-          <h1 className='footer-contact-title'>Contact Us</h1>
-          <div className='footer-contact-details'>
-            <p className='contact-detail'><span className='contact-icon'><GrLocation /></span>2231 Johnstown Road, Bensenville, IL 60106</p>
-            <p className='contact-detail'><span className='contact-icon'><FaPhoneAlt /></span>+1 234 056 78 90</p>
-            <p className='contact-detail'><span className='contact-icon'><IoMailUnreadSharp /></span>weldo@example.com</p>
-          </div>
-        </div>
+      </div>
+      <div className='footer-copy'>
+        <p>&copy; Copyright Rick Metal Works</p>
       </div>
     </footer>
   );

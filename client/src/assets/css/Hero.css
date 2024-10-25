@@ -52,6 +52,7 @@
 .hero-nav .hero-logo h4 {
   font-size: 2rem;
   color: var(--orange);
+  font-family: Anton, sans-serif;
 }
 
 .hero-nav .hero-list {
@@ -182,7 +183,6 @@
 }
 
 .hero-text p {
-  margin: 0;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.5em;

@@ -3,9 +3,8 @@ import Home from './routes/Home';
 import About from './routes/About';
 import Service from './routes/Service';
 import Contact from './routes/Contact';
-import Portfolio from './routes/Portfolio';
 import Layout from './components/Layout';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Portfolio from './routes/Portfolio';
 import { TitleProvider } from './helpers/TitleContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
