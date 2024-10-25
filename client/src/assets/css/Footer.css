@@ -1,5 +1,5 @@
 .footer-section {
-    background: var(--orange);
+    background: #702963;
     width: 100vw;
     height: auto;
     padding: 1rem;
@@ -46,7 +46,7 @@
 }
 .footer-company-description {
     font-size: 1rem;
-    color: #555;
+    color: #fff;
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -56,14 +56,14 @@
 }
 .footer-social-icons {
     font-size: 1.5rem;
-    color: #333;
+    color: #fff;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 .footer-social-icons{
     font-size: 1.5rem;
-    color: #333;
+    color: #fff;
     cursor: pointer;
     transition: color 0.3s ease;
 }
