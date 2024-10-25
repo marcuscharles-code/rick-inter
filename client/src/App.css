@@ -59,36 +59,36 @@ body main section mark {
   color: var(--orange);
   font-family: Anton, serif;
   background-color: rgba(0, 0, 0, 0);
-}.scroll-top {
-  opacity: 0;
-  width: 44px;
-  height: 44px;
+}
+
+.scroll-top {
+  width: 60px;
+  height: 60px;
   display: grid;
   z-index: 99999;
+  cursor: pointer;
   position: fixed;
+  border-radius: 50%;
   visibility: hidden;
   place-items: center;
-  border-radius: 50px;
   inset: auto 15px -15px auto;
-  background-color: hsl(var(--primary));
-}
-
-.scroll-top:hover {
-  background-color: color-mix(in srgb, hsl(var(--secondary)), transparent 20%);
-}
-
-.scroll-top:hover svg {
-  color: hsl(var(--primary));
+  background-color: var(--orange);
 }
 
 .scroll-top svg {
   width: 24px;
+  opacity: 0.6;
   height: 24px;
-  color: hsl(var(--secondary));
+  color: #fff;
+}
+
+.scroll-top:hover svg,
+.scroll-top.active:hover {
+  opacity: 1;
 }
 
 .scroll-top.active {
-  opacity: 1;
+  opacity: 0.6;
   bottom: 15px;
   visibility: visible;
 }

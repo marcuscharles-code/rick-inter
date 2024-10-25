@@ -219,7 +219,10 @@
 }
 
 .hero-modal div {
+  gap: 20px;
+  height: 100%;
   color: #fff;
+  display: grid;
   padding: 0 40px;
   text-align: center;
 }
@@ -340,7 +343,7 @@
   }
 
   .hero .hero-modal {
-    width: 70%;
+    width: 65%;
     bottom: -15%;
     display: flex;
     padding: 60px;
