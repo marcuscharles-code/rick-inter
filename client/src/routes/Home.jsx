@@ -6,7 +6,7 @@ import ReviewPage from '../pages/ReviewPage';
 import OurTeam from '../pages/OurTeam';
 import LearnMore from '../pages/LearnMore';
 import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <ContactUs />
       <ReviewPage />
       <OurTeam />
-    <Navbar />
+    {/* <Navbar /> */}
       <LearnMore />
      <Footer />
     </main>
