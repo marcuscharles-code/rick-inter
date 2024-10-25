@@ -54,3 +54,41 @@ body main section {
 body main section img {
   vertical-align: middle;
 }
+
+body main section mark {
+  color: var(--orange);
+  font-family: Anton, serif;
+  background-color: rgba(0, 0, 0, 0);
+}.scroll-top {
+  opacity: 0;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  z-index: 99999;
+  position: fixed;
+  visibility: hidden;
+  place-items: center;
+  border-radius: 50px;
+  inset: auto 15px -15px auto;
+  background-color: hsl(var(--primary));
+}
+
+.scroll-top:hover {
+  background-color: color-mix(in srgb, hsl(var(--secondary)), transparent 20%);
+}
+
+.scroll-top:hover svg {
+  color: hsl(var(--primary));
+}
+
+.scroll-top svg {
+  width: 24px;
+  height: 24px;
+  color: hsl(var(--secondary));
+}
+
+.scroll-top.active {
+  opacity: 1;
+  bottom: 15px;
+  visibility: visible;
+}
