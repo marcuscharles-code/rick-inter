@@ -62,15 +62,13 @@ export default function Hero({ text }) {
         {isOverlayVisible && (
           <div className='hero-overlay' ref={overlayRef}>
             <div></div>
-            <div>
-              <ul>
-                {lists.map((list, index) => (
-                  <li key={index}>
-                    <NavLink to={list.url}>{list.title}</NavLink>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul>
+              {lists.map((list, index) => (
+                <li key={index}>
+                  <NavLink to={list.url}>{list.title}</NavLink>
+                </li>
+              ))}
+            </ul>
           </div>
         )}
         <div className='hero-list'>

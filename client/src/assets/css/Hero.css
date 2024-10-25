@@ -121,12 +121,26 @@
   box-shadow: 0 0 4px 3px rgba(50, 50, 50, 0.05);
 }
 
-.hero-nav .hero-overlay div:first-child {
+.hero-nav .hero-overlay div {
   display: none;
 }
 
-.hero-nav .hero-overlay div:last-child {
-  display: block;
+.hero-nav .hero-overlay ul {
+  gap: 20px;
+  display: grid;
+  margin: 100px auto;
+  place-items: center;
+}
+
+.hero-nav .hero-overlay ul li a {
+  color: #000;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.hero-nav .hero-overlay ul li a:hover,
+.hero-nav .hero-overlay ul li a.active {
+  color: var(--orange);
 }
 
 .hero-text {
@@ -292,11 +306,11 @@
     height: 50px;
   }
 
-  .hero-nav .hero-overlay div:first-child {
+  .hero-nav .hero-overlay div {
     display: block;
   }
 
-  .hero-nav .hero-overlay div:last-child {
+  .hero-nav .hero-overlay ul {
     display: none;
   }
 

@@ -18,10 +18,6 @@
   position: relative;
 }
 
-.work-box .work-row:hover {
-  background: #000;
-}
-
 .work-box .work-row:nth-child(2) {
   height: 200px;
 }
