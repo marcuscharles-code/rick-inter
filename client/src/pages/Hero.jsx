@@ -49,7 +49,7 @@ export default function Hero() {
   const lists = [
     { title: 'Home', url: '/' },
     { title: 'About', url: '/about' },
-    { title: 'Services', url: '/services' },
+    { title: 'Services', url: '/service' },
     { title: 'Portfolio', url: '/portfolio' },
     { title: 'Contact', url: '/contact' },
   ];
