@@ -34,6 +34,7 @@
 
 .hero-nav.sticky {
   top: 0;
+  left: 0;
   z-index: 9;
   padding: 1rem;
   position: fixed;
@@ -304,7 +305,7 @@
   }
 
   .hero-text {
-    padding-left: 20rem;
+    padding-left: 15rem;
   }
 
   .hero-text h2 {

@@ -2,7 +2,7 @@ import '../assets/css/Learnmore.css';
 
 function LearnMore() {
     return (
-        <div className="learn-more-section">
+        <section className="learn-more-section">
             <div className="learn-more-content">
                 <h3 className="learn-more-heading">
                     <span>Want to</span>
@@ -15,7 +15,7 @@ function LearnMore() {
                 </p>
                 <button className="learn-more-btn">LEARN MORE</button>
             </div>
-        </div>
+        </section>
     );
 }
 

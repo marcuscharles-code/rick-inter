@@ -44,7 +44,7 @@ function ReviewPage() {
   });
 
   return (
-    <div className='review-section'>
+    <section className='review-section'>
       <div className='review-header'>
         <p className='review-title'>
           What <span>People Say</span>
@@ -70,7 +70,7 @@ function ReviewPage() {
           </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -8,7 +8,7 @@ import { IoMailUnreadSharp } from "react-icons/io5";
 
 export default function Footer() {
   return (
-    <footer className="footer-section">
+    <footer>
       <div className="footer-content">
         <div >
           <div className="footer-company-info">
@@ -21,11 +21,11 @@ export default function Footer() {
             Established in 1989, Welding and Iron Works has become one of the most respected structural, miscellaneous, and ornamental steel fabricators serving Southern California in multi-unit, commercial, and residential projects.
           </p>
           <div className='footer-social-icons'>
-            <FaFacebook  />
-            <BsTwitterX  />
-            <LuInstagram  />
-            <FaYoutube  />
-            <FaLinkedin  />
+            <FaFacebook />
+            <BsTwitterX />
+            <LuInstagram />
+            <FaYoutube />
+            <FaLinkedin />
           </div>
         </div>
 

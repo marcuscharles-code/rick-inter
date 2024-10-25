@@ -32,14 +32,19 @@ body main {
   top: 0;
   width: 100%;
   display: grid;
-  position: absolute;
+  position: relative;
 }
 
 body main section {
   width: 100%;
   display: grid;
+  margin: 0 auto;
   position: relative;
   place-items: center;
+}
+
+body main section img {
+  vertical-align: middle;
 }
 
 body main section mark {

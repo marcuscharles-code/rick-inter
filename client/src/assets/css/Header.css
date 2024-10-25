@@ -4,15 +4,15 @@ header {
   display: flex;
   padding: 1rem;
   font-size: 14px;
-  position: relative;
+  position: absolute;
   align-items: center;
   justify-content: space-between;
 }
 
 header:after {
   z-index: 1;
-  content: "";
   height: 1px;
+  content: "";
   display: block;
   inset: auto 0 0;
   position: absolute;
@@ -33,6 +33,6 @@ header p svg {
 
 @media all and (min-width: 700px) {
   header {
-    padding: .6rem 6rem;
+    padding: 0.6rem 6rem;
   }
 }

@@ -1,4 +1,5 @@
 import Hero from '../pages/Hero';
+import Work from '../pages/Work';
 import useDocumentTitle from '../helpers/useDocumentTitle';
 
 export default function Portfolio() {
@@ -8,6 +9,7 @@ export default function Portfolio() {
     <>
       <main>
         <Hero text='Portfolio' />
+        <Work />
       </main>
     </>
   );

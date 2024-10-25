@@ -43,7 +43,7 @@ function OurTeam() {
     });
 
     return (
-        <div className="team-section">
+        <section className="team-section">
             <div className="team-header">
                 <h1 className="team-title">
                     Our <mark className="highlight">Team</mark>
@@ -84,7 +84,7 @@ function OurTeam() {
 
                 <PiGreaterThanThin className="arrow arrow-right" onClick={handleSwipeLeft} />
             </div>
-        </div>
+        </section>
     );
 }
 

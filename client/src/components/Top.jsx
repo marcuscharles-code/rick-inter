@@ -1,5 +1,5 @@
+import { FaAngleUp } from 'react-icons/fa6';
 import { useState, useEffect } from 'react';
-import { BiUpArrowAlt } from 'react-icons/bi';
 import { useLocation } from 'react-router-dom';
 
 const LoadTop = () => {
@@ -33,7 +33,7 @@ const PageTop = () => {
 
   return (
     <a onClick={scrollToTop} className={`scroll-top ${isVisible ? 'active' : ''}`}>
-      <BiUpArrowAlt />
+      <FaAngleUp />
     </a>
   );
 };

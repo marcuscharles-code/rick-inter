@@ -1,11 +1,11 @@
-.footer-section {
-    background: #702963;
+footer {
     width: 100vw;
     height: auto;
     padding: 1rem;
     display: flex;
+    position: relative;
+    background: #702963;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: flex-start;
     flex-wrap: wrap;
 }
