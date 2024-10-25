@@ -1,13 +1,13 @@
 import Hero from '../pages/Hero';
 import useDocumentTitle from '../helpers/useDocumentTitle';
 
-export default function Service() {
-  useDocumentTitle('Services - Rick');
+export default function Portfolio() {
+  useDocumentTitle('Portfolio - Rick');
 
   return (
     <>
       <main>
-        <Hero text='Services' />
+        <Hero text='Portfolio' />
       </main>
     </>
   );

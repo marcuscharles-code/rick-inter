@@ -1,23 +1,18 @@
 import '../assets/css/Hero.css';
-import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import logo from '../assets/images/logo.png';
 import hero from '../assets/images/hero.webp';
 import { useState, useEffect, useRef } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
-export default function Hero() {
+export default function Hero({ text }) {
+  const location = useLocation();
   const [isSticky, setIsSticky] = useState(false);
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
-
   const overlayRef = useRef(null);
 
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    setIsSticky(offset > 0);
-  };
-
-  const handleOverlayToggle = () => {
-    setIsOverlayVisible(!isOverlayVisible);
-  };
+  const handleScroll = () => setIsSticky(window.scrollY > 0);
+  const handleOverlayToggle = () => setIsOverlayVisible(!isOverlayVisible);
 
   const handleClickOutside = (event) => {
     if (overlayRef.current && !overlayRef.current.contains(event.target)) {
@@ -27,7 +22,6 @@ export default function Hero() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-
     if (isOverlayVisible) {
       document.addEventListener('mousedown', handleClickOutside);
     } else {
@@ -54,8 +48,10 @@ export default function Hero() {
     { title: 'Contact', url: '/contact' },
   ];
 
+  const isHomeRoute = location.pathname === '/';
+
   return (
-    <section className='hero'>
+    <section className={`hero ${isHomeRoute ? 'home' : ''}`}>
       <img src={hero} alt='bg' />
       <span></span>
       <div className={`hero-nav ${isSticky ? 'sticky' : ''}`}>
@@ -66,7 +62,15 @@ export default function Hero() {
         {isOverlayVisible && (
           <div className='hero-overlay' ref={overlayRef}>
             <div></div>
-            <div></div>
+            <div>
+              <ul>
+                {lists.map((list, index) => (
+                  <li key={index}>
+                    <NavLink to={list.url}>{list.title}</NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         )}
         <div className='hero-list'>
@@ -86,20 +90,33 @@ export default function Hero() {
           </label>
         </div>
       </div>
-      <div className='hero-text'>
-        <h2>Welding</h2>
-        <h3>Welding <mark>&amp;</mark> Iron Works</h3>
-        <p>We Build <mark>The Best.</mark></p>
-      </div>
-      <div className='hero-modal'>
-        {items.map((item) => (
-          <div key={item.num}>
-            <h3>0{item.num}</h3>
-            <p>{item.title}</p>
-            <span>{item.text}</span>
-          </div>
-        ))}
-      </div>
+      {isHomeRoute ? (
+        <div className='hero-text'>
+          <h2>Welding</h2>
+          <h3>Welding <mark>&amp;</mark> Iron Works</h3>
+          <p>We Build <mark>The Best.</mark></p>
+        </div>
+      ) : (
+        <div className='hero-text'>
+          <h3>{text}</h3>
+          <p><Link to="/">Home</Link> /<span>{text}</span></p>
+        </div>
+      )}
+      {isHomeRoute && (
+        <div className='hero-modal'>
+          {items.map((item) => (
+            <div key={item.num}>
+              <h3>0{item.num}</h3>
+              <p>{item.title}</p>
+              <span>{item.text}</span>
+            </div>
+          ))}
+        </div>
+      )}
     </section>
   );
 }
+
+Hero.propTypes = {
+  text: PropTypes.string,
+};
