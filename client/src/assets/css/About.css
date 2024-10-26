@@ -6,6 +6,9 @@
   flex-direction: column;
   justify-content: center;
 }
+.about-section--small {
+  margin-top: 2rem; 
+}
 
 .abt-img {
   display: grid;
@@ -136,3 +139,5 @@
   }
 
 }
+
+

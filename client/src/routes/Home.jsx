@@ -1,5 +1,5 @@
 import Hero from '../pages/Hero';
-import About from '../pages/About';
+import AboutPage from '../pages/AboutPage';
 import OurTeam from '../pages/OurTeam';
 import Services from '../pages/Services';
 import ContactUs from '../pages/ContactUs';
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <About />
+      <AboutPage />
       <Services />
       <ContactUs />
       <ReviewPage />

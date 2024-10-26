@@ -4,8 +4,7 @@ import ceo from '../assets/images/ceo.webp';
 import { FaGreaterThan } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-function About() {
-  // Animation variants for more pronounced and artistic effects
+function AboutPage({ isAboutPage }) {
   const fadeInUp = {
     hidden: { opacity: 0, y: 50, scale: 0.95 },
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1, type: 'spring', bounce: 0.4 } },
@@ -27,7 +26,7 @@ function About() {
   };
 
   return (
-    <section className='about-section'>
+    <section className={`about-section ${isAboutPage ? 'about-section--small' : ''}`}>
       <motion.div
         className='abt-img'
         initial="hidden"
@@ -67,7 +66,7 @@ function About() {
             smooth and painless process, while we make their vision into
             reality.
           </p>
-          <hr></hr>
+          <hr />
           <p>
             With our knowledge and experience, it is our goal to attend to our
             clients needs, going above and beyond their expectations. Longs
@@ -108,4 +107,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutPage;
