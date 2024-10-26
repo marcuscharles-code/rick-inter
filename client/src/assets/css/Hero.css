@@ -151,12 +151,12 @@
   inset: 50% auto;
   user-select: none;
   position: absolute;
-  height: max-content;
 }
 
 .home .hero-text {
   padding: 0;
   width: max-content;
+  text-align: center;
 }
 
 .hero-nav:has(div.hero-overlay) + .hero-text h2 {
@@ -166,12 +166,10 @@
 .hero-text h2 {
   z-index: 1;
   opacity: 0.08;
-  line-height: 1;
-  font-size: 6rem;
   font-weight: 400;
-  translate: 0 -50%;
+  inset: -50px auto;
+  font-size: 6.2rem;
   position: absolute;
-  inset: 50% auto auto;
   font-family: Anton, sans-serif;
 }
 
@@ -185,6 +183,7 @@
 .hero-text p {
   font-weight: 400;
   line-height: 30px;
+  font-size: 1.2rem;
   letter-spacing: 0.5em;
   text-transform: uppercase;
 }
@@ -206,10 +205,10 @@
 }
 
 .hero .hero-modal {
+  top: 90%;
   gap: 30px;
   width: 90%;
   z-index: 2;
-  bottom: -100%;
   display: grid;
   margin: 0 auto;
   padding: 60px 0;
@@ -249,11 +248,11 @@
   }
 
   .hero .hero-nav {
-    padding: 4rem 6rem 1rem;
+    padding: 4rem 3rem 1rem;
   }
 
   .hero .hero-nav.sticky {
-    padding: 1.5rem 6rem;
+    padding: 1.5rem 3rem;
   }
 
   .hero-nav .hero-overlay + .hero-list {
@@ -265,8 +264,6 @@
 
   .hero-list ul {
     gap: 10px;
-    color: red;
-    margin: 0;
     display: flex;
     align-items: center;
   }
@@ -325,13 +322,18 @@
     padding-left: 15rem;
   }
 
+  .home .hero-text {
+    inset: auto;
+  }
+
   .hero-text h2 {
-    font-size: 25rem;
-    translate: -20% -50%;
+    font-size: 13.6rem;
+    inset: -100px auto auto -10px;
   }
 
   .hero-text h3 {
     font-size: 3rem;
+    line-height: 1.5;
   }
 
   .home .hero-text h3 {
@@ -343,15 +345,15 @@
   }
 
   .hero .hero-modal {
-    width: 65%;
-    bottom: -15%;
+    width: 85%;
+    bottom: -20%;
     display: flex;
     padding: 60px;
     align-items: center;
   }
 
   .hero-modal div {
-    padding: 0;
-    width: 100%;
+    gap: 10px;
+    padding: 0 15px;
   }
 }

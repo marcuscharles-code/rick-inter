@@ -1,9 +1,9 @@
 header {
   z-index: 9;
   width: 100%;
-  display: flex;
   padding: 1rem;
-  font-size: 14px;
+  display: flex;
+  font-size: 0.9rem;
   position: absolute;
   align-items: center;
   justify-content: space-between;
@@ -18,26 +18,74 @@ header:after {
   background-color: #ffffff1a;
 }
 
-header p {
+header div:last-child,
+header div:first-child {
+  display: none;
+}
+
+header div,
+header div p {
   gap: 10px;
+  color: #fff;
   display: flex;
+  position: relative;
   align-items: center;
+  justify-content: space-between;
 }
 
-header p svg {
-  fill: var(--orange);
+header div p {
+  gap: 5px;
 }
 
-header p a {
+header div a {
   color: #fff;
 }
 
-header p a:hover {
+header div p svg,
+header div a:hover,
+header div span svg:hover {
   color: var(--orange);
 }
 
 @media all and (min-width: 700px) {
   header {
-    padding: 0.6rem 6rem;
+    padding: 0 3rem;
+  }
+
+  header div:last-child,
+  header div:first-child {
+    display: flex;
+  }
+
+  header div {
+    gap: 100px;
+    padding: 1rem 0;
+  }
+
+  header div:first-child:after,
+  header div:last-child:before,
+  header div:last-child span:last-child:before {
+    width: 1px;
+    content: "";
+    inset: 0 -40px;
+    display: block;
+    position: absolute;
+    background-color: #ffffff1a;
+  }
+
+  header div:first-child:after {
+    inset: 0 -40px 0 auto;
+  }
+
+  header div:last-child span:last-child:before {
+    inset: 0 140px;
+  }
+
+  header div span {
+    gap: 20px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
   }
 }
