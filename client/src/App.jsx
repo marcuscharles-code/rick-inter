@@ -2,6 +2,7 @@ import './App.css';
 import Home from './routes/Home';
 import About from './routes/About';
 import Service from './routes/Service';
+import ServiceDetailsRoute from './routes/ServiceDetailsRoute'
 import Contact from './routes/Contact';
 import Layout from './components/Layout';
 import Portfolio from './routes/Portfolio';
@@ -19,6 +20,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/service' element={<Service />} />
+            <Route path="/services/:serviceId" element={<ServiceDetailsRoute />} /> 
             <Route path='/contact' element={<Contact />} />
             <Route path='/portfolio' element={<Portfolio />} />
           </Routes>

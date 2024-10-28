@@ -54,7 +54,7 @@ function AboutPage({ isAboutPage }) {
       >
         <motion.div className='founder-name' variants={bounceInLeft}>
           <span>
-          Ramos <mark> Ihekona</mark>
+          WHO WE <mark> ARE</mark>
           </span>
           <span>Founder</span>
         </motion.div>

@@ -54,3 +54,39 @@
 .service-link a:hover {
     color: #0056b3;
 }
+
+
+/*<--------- SERVICE DETAILS -----------> */
+
+.service-detail{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.sub-service-image{
+    width: 100%;
+    height: 50%;
+    border-radius: 10%;
+    position: relative;
+
+}
+.sub-service-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.service-detail h1{
+    font-size: 2rem;
+    color: red;
+}
+.service-detail p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}

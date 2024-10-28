@@ -1,6 +1,6 @@
 import '../assets/css/Hero.css';
 import PropTypes from 'prop-types';
-import logo from '../assets/images/logo.png';
+import Logo2 from '../assets/images/Logo2.png';
 import hero from '../assets/images/hero.webp';
 import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
@@ -56,7 +56,7 @@ export default function Hero({ text }) {
       <span></span>
       <div className={`hero-nav ${isSticky ? 'sticky' : ''}`}>
         <Link className='hero-logo'>
-          <img src={logo} alt='logo' width={50} />
+          <img src={Logo2} alt='logo' width={50} />
           <h4>Rick</h4>
         </Link>
         {isOverlayVisible && (
