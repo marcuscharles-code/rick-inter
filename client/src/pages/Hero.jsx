@@ -90,9 +90,9 @@ export default function Hero({ text }) {
       </div>
       {isHomeRoute ? (
         <div className='hero-text'>
-          <h2>Welding</h2>
-          <h3>Welding <mark>&amp;</mark> Iron Works</h3>
-          <p>We Build <mark>The Best.</mark></p>
+          <h2>Rick</h2>
+          <h3><mark>Rick</mark>  International <br/> Services <mark>Limited</mark></h3>
+          {/* <p>We Build <mark>The Best.</mark></p> */}
         </div>
       ) : (
         <div className='hero-text'>

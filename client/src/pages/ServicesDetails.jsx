@@ -1,17 +1,20 @@
 import { useParams } from "react-router-dom";
 import '../assets/css/ServicesPage.css'
 import ceo from "../assets/images/ceo.webp";
+import weldhead from '../assets/images/weldhead.webp'
+import pipe from '../assets/images/pipe.webp'
+
 
 const serviceDetails = {
   "wellhead-installation": {
     title: "Wellhead Installation",
     description: "Rick International specializes in the complete installation of wellhead systems, supporting projects from start to finish. Our team is equipped with the latest tools and technical expertise to install various types of wellheads, ensuring high performance and safety standards. Having successfully executed numerous wellhead installations for leading oil companies, Rick International has proven its ability to handle the complexities of the job, from initial setup to final testing. Our commitment to quality and precision has made us a trusted partner in wellhead services across Nigeria's oil and gas sector.",
-    img: ceo,
+    img: weldhead,
   },
   "pipe-inspection": {
     title: "Pipe Inspection",
     description: "Our pipe inspection service is designed to enhance the safety and integrity of oilfield operations. Rick International employs advanced inspection technologies and experienced engineers to conduct comprehensive inspections, identifying issues before they escalate. Our approach to inspection includes non-destructive testing and state-of-the-art evaluation techniques that meet stringent industry standards. This proactive approach has established Rick International as a leader in pipe inspection, helping clients reduce risks and maintain operational efficiency.",
-    img: ceo,
+    img: pipe,
   },
   "equipment-maintenance": {
     title: "Equipment Maintenance",

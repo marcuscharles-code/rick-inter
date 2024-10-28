@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "../assets/css/ServicesPage.css";
 import ceo from "../assets/images/ceo.webp";
+import weldhead from '../assets/images/weldhead.webp'
+import pipe from '../assets/images/pipe.webp'
+
 
 function ServicePage() {
     const serviceList = [
         {
             service: "Wellhead Installation",
-            img: ceo,
+            img: weldhead,
             path: "/services/wellhead-installation", // Define a path for routing
         },
         {
             service: "Pipe Inspection",
-            img: ceo,
+            img: pipe,
             path: "/services/pipe-inspection",
         },
         {
