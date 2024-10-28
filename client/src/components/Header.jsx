@@ -8,17 +8,17 @@ export default function Header() {
       <div>
         <p>
           <MdLocationOn />
-          <span>2231 Johnstown Road Bensenville, IL 60106</span>
+          <span>No. 3, Shell Location Road, Off Boskel Road, Km16, Ph-Aba Expressway, Port Harcourt</span>
         </p>
       </div>
       <div>
         <p>
           <MdMail size={16} />
-          <a href='mailto:info@rickinterservicesng.com'>info@rickinterservicesng.com</a>
+          <a href='mailto:info@rislng.com'>info@rislng.com</a>
         </p>
         <p>
           <MdPhoneEnabled size={16} />
-          <a href='tel:+2348037236306'>+234 803 723 6306</a>
+          <a href='tel:+2348037236306'>+2348037236306</a>
         </p>
       </div>
       <div>

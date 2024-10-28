@@ -54,24 +54,18 @@ function AboutPage({ isAboutPage }) {
       >
         <motion.div className='founder-name' variants={bounceInLeft}>
           <span>
-            Alico <mark>Dangote</mark>
+          Ramos <mark> Ihekona</mark>
           </span>
           <span>Founder</span>
         </motion.div>
 
         <motion.div className='about-txt' variants={fadeInUp}>
           <p>
-            Since 1999, Weldo has been servicing all of San Diego. Our mission
-            is to work diligently and efficiently with every client ensuring a
-            smooth and painless process, while we make their vision into
-            reality.
+          Since 2009, Rick International Services Limited has proudly served Nigeria&apos;s oil and gas sector with reliable engineering and technical solutions. Our mission is to deliver exceptional service, seamlessly managing each project to bring our clients&apos; vision to life.
           </p>
           <hr />
           <p>
-            With our knowledge and experience, it is our goal to attend to our
-            clients needs, going above and beyond their expectations. Longs
-            Welding is your choice for the highest quality and most innovative
-            ideas in iron metal works and ornamentals.
+          With decades of industry experience, we go beyond expectations, ensuring quality in every phase, from procurement to installation and maintenance. Rick International Services is your trusted partner for excellence and innovation in wellhead systems, equipment services, and comprehensive oilfield solutions.
           </p>
         </motion.div>
 
@@ -81,9 +75,10 @@ function AboutPage({ isAboutPage }) {
           </h1>
           <div className='reasons'>
             {[
-              'Superior precise quality welds',
-              'Welds can be made with little or no filler',
-              'Precise control of welding variables'
+              'Expertise in Oil & Gas Solutions',
+              'Commitment to Safety and Quality',
+              'Local Insight with Global Standards',
+              'Corporate Social Responsibilit'
             ].map((reason, index) => (
               <motion.div
                 key={index}

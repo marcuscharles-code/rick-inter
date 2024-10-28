@@ -31,7 +31,7 @@ function NavInfo() {
         <span>
           <MdOutlineMail />
         </span>
-        <h1>info@welldo.com</h1>
+        <h1>info@.com</h1>
       </div>
 
       <div className="nav-contact-info">
