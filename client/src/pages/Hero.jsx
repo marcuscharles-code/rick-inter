@@ -91,7 +91,7 @@ export default function Hero({ text }) {
       {isHomeRoute ? (
         <div className='hero-text'>
           <h2>Rick</h2>
-          <h3><mark>Rick</mark>  International <br/> Services <mark>Limited</mark></h3>
+          <h3><mark>Rick</mark>  International <br/> Services Limited</h3>
           {/* <p>We Build <mark>The Best.</mark></p> */}
         </div>
       ) : (

@@ -3,6 +3,7 @@ import "../assets/css/ServicesPage.css";
 import ceo from "../assets/images/ceo.webp";
 import weldhead from '../assets/images/weldhead.webp'
 import pipe from '../assets/images/pipe.webp'
+import maintenance from '../assets/images/maintenance.webp'
 
 
 function ServicePage() {
@@ -19,7 +20,7 @@ function ServicePage() {
         },
         {
             service: "Equipment Maintenance",
-            img: ceo,
+            img: maintenance,
             path: "/services/equipment-maintenance",
         },
         {

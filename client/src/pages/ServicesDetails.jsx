@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom";
 import '../assets/css/ServicesPage.css'
 import ceo from "../assets/images/ceo.webp";
-import weldhead from '../assets/images/weldhead.webp'
-import pipe from '../assets/images/pipe.webp'
+import weldhead from '../assets/images/weldhead.webp';
+import pipe from '../assets/images/pipe.webp';
+import maintenance from '../assets/images/maintenance.webp'
 
 
 const serviceDetails = {
@@ -19,7 +20,7 @@ const serviceDetails = {
   "equipment-maintenance": {
     title: "Equipment Maintenance",
     description: "Rick International provides reliable maintenance services for essential oilfield equipment, including wellheads and Xmas trees. We emphasize preventative maintenance and repairs, ensuring equipment longevity and operational uptime. With seasoned maintenance professionals on our team, we have developed efficient maintenance programs tailored to each client’s needs. Our rigorous standards and effective solutions have made us the preferred choice for companies looking to minimize downtime and enhance equipment performance.",
-    img: ceo,
+    img: maintenance,
   },
   "waste-management": {
     title: "Waste Management",
