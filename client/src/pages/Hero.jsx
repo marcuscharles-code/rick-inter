@@ -5,6 +5,7 @@ import hero from '../assets/images/hero.webp';
 import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
+
 export default function Hero({ text }) {
   const location = useLocation();
   const [isSticky, setIsSticky] = useState(false);
@@ -57,7 +58,7 @@ export default function Hero({ text }) {
       <div className={`hero-nav ${isSticky ? 'sticky' : ''}`}>
         <Link className='hero-logo'>
           <img src={Logo2} alt='logo' width={50} />
-          <h4>Rick</h4>
+          <h4>RICK</h4>
         </Link>
         {isOverlayVisible && (
           <div className='hero-overlay' ref={overlayRef}>
@@ -91,7 +92,7 @@ export default function Hero({ text }) {
       {isHomeRoute ? (
         <div className='hero-text'>
           <h2>Rick</h2>
-          <h3><mark>Rick</mark>  International <br/> Services Limited</h3>
+          <h3><mark>RICK</mark>  INTERNATIONAL <br/> SERVICES LIMITED </h3>
           {/* <p>We Build <mark>The Best.</mark></p> */}
         </div>
       ) : (

@@ -1,5 +1,5 @@
 import '../assets/css/Footer.css';
-import logo from '../assets/images/logo.png'
+import Logo2 from '../assets/images/Logo2.png'
 import { MdEdit, MdMail, MdLocationOn, MdPhoneEnabled } from 'react-icons/md';
 import { FaFacebookF, FaXTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa6';
 
@@ -9,7 +9,7 @@ export default function Footer() {
       <div className='footer-content'>
         <div className='footer-info'>
           <a href='#'>
-            <img src={logo} alt='logo' width={50} />
+            <img src={Logo2} alt='logo' width={50} />
             <h4>Rick</h4>
           </a>
           <p>Established in 1989, Welding and Iron Works has become one of the most respected structural, miscellaneous, and ornamental steel fabricators serving Southern California in multi-unit, commercial, and residential projects.</p>

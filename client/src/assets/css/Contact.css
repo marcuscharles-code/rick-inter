@@ -91,6 +91,16 @@
     background-color: red;
 }
 
+@media (min-width: 768px) {
+    .contact-us-container{
+        flex-direction: row;
+    }
+}
+
+
+
+
+
 /*
 .contact-header {
     text-align: center;
