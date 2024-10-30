@@ -1,0 +1,61 @@
+.scroll-container {
+    position: relative;
+    overflow: hidden;
+    height: 12rem;
+    width: 100vw;
+    padding: 2rem 0;
+    /* background: #000; */
+}
+
+.brand-div {
+    display: flex;
+    gap: 2rem;
+    margin: auto;
+    animation: scroll 20s linear infinite;
+}
+
+.brand-logo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10px;
+    flex-shrink: 0;
+    position: relative;
+    transition: opacity 0.5s ease;
+}
+
+.brand-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fade effect at edges */
+.scroll-container::before,
+.scroll-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5%;
+    pointer-events: none;
+    background: linear-gradient(to right, #fff, transparent);
+}
+
+.scroll-container::before {
+    left: 0;
+}
+
+.scroll-container::after {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+/* Scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

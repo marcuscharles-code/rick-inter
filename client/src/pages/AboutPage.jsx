@@ -26,7 +26,7 @@ function AboutPage({ isAboutPage }) {
   };
 
   return (
-    <section className={`about-section ${isAboutPage ? 'about-section--small' : ''}`}>
+    <section className={`about-section ${isAboutPage ? 'about-section--small' : ''}`} id='about-section'>
       <motion.div
         className='abt-img'
         initial="hidden"

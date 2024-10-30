@@ -5,6 +5,7 @@ import Service from '../pages/Services';
 import OurTeam from '../pages/OurTeam';
 import Counter from '../components/Counter';
 import ContactBox from '../pages/ContactBox';
+import LogoScroll from '../pages/LogoScroll';
 
 export default function About() {
   useDocumentTitle('About - Rick');
@@ -18,6 +19,7 @@ export default function About() {
         <Service />
         <Counter />
         <OurTeam />
+        <LogoScroll />
         <ContactBox />
       </main>
     </>

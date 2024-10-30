@@ -1,40 +1,51 @@
 import '../assets/css/Team.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import img1 from '../assets/images/Bg1.webp';
 import img2 from '../assets/images/Bg2.webp';
-import { PiGreaterThanThin } from "react-icons/pi";
-import { PiLessThanThin } from "react-icons/pi";
+import { FaArrowRight, FaArrowLeft  } from "react-icons/fa";
+// import { PiGreaterThanThin } from "react-icons/pi";
+// import { PiLessThanThin } from "react-icons/pi";
 
 const teamMembers = [
-    {
-        name: 'John Doe',
-        position: 'Lead Engineer',
-        phone: '123-456-7890',
-        img: img1
-    },
-    {
-        name: 'Jane Smith',
-        position: 'Project Manager',
-        phone: '987-654-3210',
-        img: img2
-    },
-    // Add more team members as needed
+    { name: 'John Doe', position: 'Lead Engineer', phone: '123-456-7890', img: img1 },
+    { name: 'Jane Smith', position: 'Project Manager', phone: '987-654-3210', img: img2 },
+    { name: 'efdkxm', position: 'Project Manager', phone: '987-654-3210', img: img2 },
+    { name: 'ggggg', position: 'Project Manager', phone: '987-654-3210', img: img2 },
 ];
 
 function OurTeam() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 700);
+
+    // Update isWideScreen on resize
+    useEffect(() => {
+        const handleResize = () => setIsWideScreen(window.innerWidth >= 700);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    // Change image every 10 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleSwipeLeft();
+        }, 10000); // 10 seconds in milliseconds
+
+        return () => clearInterval(interval); // Cleanup on component unmount
+    }, [isWideScreen, currentIndex]);
 
     const handleSwipeLeft = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === teamMembers.length - 1 ? 0 : prevIndex + 1
-        );
+        setCurrentIndex((prevIndex) => {
+            const maxIndex = teamMembers.length - (isWideScreen ? 2 : 1);
+            return prevIndex === maxIndex ? 0 : prevIndex + 1;
+        });
     };
 
     const handleSwipeRight = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? teamMembers.length - 1 : prevIndex - 1
-        );
+        setCurrentIndex((prevIndex) => {
+            const maxIndex = teamMembers.length - (isWideScreen ? 2 : 1);
+            return prevIndex === 0 ? maxIndex : prevIndex - 1;
+        });
     };
 
     const swipeHandlers = useSwipeable({
@@ -60,12 +71,10 @@ function OurTeam() {
                     AirForce Trained Veteran / Precision T.I.G. & M.I.G. Welding, 39 Years!
                 </p>
 
-                <button className="see-more-btn">See More</button>
+               
             </div>
 
             <div {...swipeHandlers} className="team-photo-container">
-                <PiLessThanThin className="arrow arrow-left" onClick={handleSwipeRight} />
-
                 <div className="team-photo">
                     <img
                         src={teamMembers[currentIndex].img}
@@ -78,11 +87,30 @@ function OurTeam() {
                             <span className="team-member-position">{teamMembers[currentIndex].position}</span>
                             <span className="team-member-phone">{teamMembers[currentIndex].phone}</span>
                         </p>
-
                     </span>
                 </div>
 
-                <PiGreaterThanThin className="arrow arrow-right" onClick={handleSwipeLeft} />
+                {isWideScreen && teamMembers[currentIndex + 1] && (
+                    <div className="team-photo">
+                        <img
+                            src={teamMembers[currentIndex + 1].img}
+                            alt={teamMembers[currentIndex + 1].name}
+                            className="team-img"
+                        />
+                        <span className="team-photo-overlay">
+                            <p className="team-member-info">
+                                <strong className="team-member-name">{teamMembers[currentIndex + 1].name}</strong>
+                                <span className="team-member-position">{teamMembers[currentIndex + 1].position}</span>
+                                <span className="team-member-phone">{teamMembers[currentIndex + 1].phone}</span>
+                            </p>
+                        </span>
+                    </div>
+                )}
+                
+                <div className="arrow-container">
+                    <FaArrowLeft className="arrow arrow-left" onClick={handleSwipeRight} />
+                    <FaArrowRight className="arrow arrow-right" onClick={handleSwipeLeft} />
+                </div>
             </div>
         </section>
     );

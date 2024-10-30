@@ -2,6 +2,9 @@ import '../assets/css/Hero.css';
 import PropTypes from 'prop-types';
 import Logo2 from '../assets/images/Logo2.png';
 import hero from '../assets/images/hero.webp';
+import eyescan from '../assets/images/eyescan.mp4'
+import value from '../assets/images/value.mp4'
+import mission from '../assets/images/mission.mp4'
 import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
@@ -36,10 +39,11 @@ export default function Hero({ text }) {
   }, [isOverlayVisible]);
 
   const items = [
-    { num: 1, title: 'give us a call', text: 'Your official source for 24/7 Rick support' },
-    { num: 2, title: 'evaluate the cost', text: 'Cost analysis helps evaluate contract profitability' },
-    { num: 3, title: 'get the job done', text: 'Fulfil one\'s task, to do what is required to do' },
-  ];
+    { icon: <video src={eyescan} autoPlay loop muted />, title: 'OUR VISION', text: 'Your official source for 24/7 Rick support' },
+    { icon: <video src={mission} autoPlay loop muted />, title: 'OUR MISSION', text: 'Cost analysis helps evaluate contract profitability' },
+    { icon: <video src={value} autoPlay loop muted />, title: 'CORE VALUES', text: 'Fulfill one\'s task, to do what is required to do' },
+];
+
 
   const lists = [
     { title: 'Home', url: '/' },
@@ -91,8 +95,11 @@ export default function Hero({ text }) {
       </div>
       {isHomeRoute ? (
         <div className='hero-text'>
+          <div className='heroPage-logo'>
+            <img src={Logo2} />
+          </div>
           <h2>Rick</h2>
-          <h3><mark>RICK</mark>  INTERNATIONAL <br/> SERVICES LIMITED </h3>
+          <h3><mark>RICK</mark>  INTERNATIONAL <br /> SERVICES LIMITED </h3>
           {/* <p>We Build <mark>The Best.</mark></p> */}
         </div>
       ) : (
@@ -104,8 +111,10 @@ export default function Hero({ text }) {
       {isHomeRoute && (
         <div className='hero-modal'>
           {items.map((item) => (
-            <div key={item.num}>
-              <h3>0{item.num}</h3>
+            <div key={item.icon}>
+              <div className='animated-icon'>
+                {item.icon}
+              </div>
               <p>{item.title}</p>
               <span>{item.text}</span>
             </div>

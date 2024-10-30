@@ -1,6 +1,5 @@
 import '../assets/css/Review.css';
-import { PiGreaterThanThin } from "react-icons/pi";
-import { PiLessThanThin } from "react-icons/pi";
+import { FaArrowRight, FaArrowLeft  } from "react-icons/fa";
 import { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import ceo from '../assets/images/ceo.webp';
@@ -49,7 +48,7 @@ function ReviewPage() {
         <p className='review-title'>
           What <span>People Say</span>
         </p>
-        <h4 className='company-name'>Weldo Metal Fabrication</h4>
+        <h4 className='company-name'>Rick International Services</h4>
         <hr className='review-divider' />
       </div>
 
@@ -63,10 +62,10 @@ function ReviewPage() {
 
         <div className='review-navigation'>
           <span className='nav-arrow back-arrow' onClick={prevReview}>
-            <PiLessThanThin />
+            <FaArrowLeft />
           </span>
           <span className='nav-arrow next-arrow' onClick={nextReview}>
-            <PiGreaterThanThin />
+            <FaArrowRight />
           </span>
         </div>
       </div>

@@ -91,11 +91,13 @@
   }
 
   .services .services-container {
-    width: 65%;
+    width: 90%;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .services .services-container div {
-    padding: 30px 50px;
+    /* padding: 30px 50px; */
+    text-align: center;
+    width: 20rem;
   }
 }

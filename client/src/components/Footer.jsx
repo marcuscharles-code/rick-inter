@@ -1,6 +1,6 @@
 import '../assets/css/Footer.css';
 import Logo2 from '../assets/images/Logo2.png'
-import { MdEdit, MdMail, MdLocationOn, MdPhoneEnabled } from 'react-icons/md';
+import { MdEdit, MdMail, MdLocationOn, MdOutlineCall  } from 'react-icons/md';
 import { FaFacebookF, FaXTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa6';
 
 export default function Footer() {
@@ -12,7 +12,9 @@ export default function Footer() {
             <img src={Logo2} alt='logo' width={50} />
             <h4>Rick</h4>
           </a>
-          <p>Established in 1989, Welding and Iron Works has become one of the most respected structural, miscellaneous, and ornamental steel fabricators serving Southern California in multi-unit, commercial, and residential projects.</p>
+          <p>
+          Since 2009, Rick International Services Limited has proudly served Nigeria&apos;s oil and gas sector with reliable engineering and technical solutions. Our mission is to deliver exceptional service, seamlessly managing each project to bring our clients&apos; vision to life.
+          </p>
           <div>
             <a href=''><FaFacebookF size={18} /></a>
             <a href=''><FaXTwitter size={18} /></a>
@@ -26,15 +28,15 @@ export default function Footer() {
           <p>
             <MdLocationOn />
             <span>
-            2231 Johnstown Road Bensenville, IL 60106</span>
+            No. 3, Shell Location Road, Off Boskel Road, Km16, Ph-Aba Expressway, Port Harcourt</span>
           </p>
           <p>
-            <MdPhoneEnabled />
-            <a href='tel:+2348037236306'>+234 803 723 6306</a>
+            <MdOutlineCall  />
+            <a href='tel:+2348037236306'>+234-803-7236-306</a>
           </p>
           <p>
             <MdMail />
-            <a href='mailto:info@rickinterservicesng.com'>info@rickinterservicesng.com</a>
+            <a href='mailto:info@rickinterservicesng.com'>info@rislng.com</a>
           </p>
         </div>
         <div className='footer-news'>

@@ -70,6 +70,7 @@ footer .footer-content {
 .footer-content .footer-contact p {
   gap: 10px;
   padding: 1rem;
+  color: #fff;
   display: flex;
   font-size: 1rem;
   align-items: center;
@@ -80,18 +81,17 @@ footer .footer-content {
   border-bottom: 1px solid #ffffff1a;
 }
 
-.footer-content .footer-contact p span,
-.footer-content .footer-contact p a:hover {
+.footer-content .footer-contact p span:hover {
+  color: #fff;
+}
+.footer-content .footer-contact p a:hover{
+  color: var(--orange);
+}
+.footer-content .footer-contact p a {
   color: #fff;
 }
 
-.footer-content .footer-contact p a {
-  color: var(--orange);
-}
 
-.footer-content .footer-contact p a {
-  opacity: 0.7;
-}
 
 .footer-content .footer-news p {
     color: #fff;
@@ -148,7 +148,12 @@ footer .footer-content {
 
 footer .footer-copy {
   padding: 1.2rem;
-  background: #fff;
+  background: var(--purple);
+  color: #fff;
+  border: #fff solid 1px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
   text-align: center;
 }
 

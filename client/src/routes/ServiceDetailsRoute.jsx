@@ -7,7 +7,7 @@ import Hero from "../pages/Hero"
 function ServiceDetailsRoute() {
   return (
     <main>
-        <Hero text='servicesDetails' />
+        <Hero text='service/servicesDetails' />
         <ServicesDetails />
     </main>
   )

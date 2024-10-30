@@ -1,5 +1,4 @@
 import '../assets/css/ContactBox.css';
-import paperPlane from '../assets/images/paperPlane.png'
 import officeBuilding from '../assets/images/officeBuilding.png'
 import customerService from '../assets/images/customerService.png'
 
@@ -11,13 +10,6 @@ const contactData = [
         description: 'View our locations around the world and find contact details for your nearest office.',
         buttonText: 'Locate the Nearest',
     },
-    // {
-    //     id: 2,
-    //     image: paperPlane,
-    //     title: 'Customer Support',
-    //     description: 'Contact our support team for any inquiries or issues you may have.',
-    //     buttonText: 'Get Support',
-    // },
     {
         id: 3,
         image: customerService,
@@ -36,7 +28,7 @@ function ContactBox() {
                 <div className="contact-box" key={contact.id}>
                     <div className='icon-div'>
                         <a href="#">
-                            <img src={contact.image} alt={contact.title} className="contact-image" />
+                            <img src={contact.image} alt={contact.title} className="contact-image-icon" />
                         </a>
                     </div>
                     <a href="#">

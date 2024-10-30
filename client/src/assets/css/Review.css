@@ -102,4 +102,11 @@
     transition: background-color 0.3s ease;
   }
   
-  
+  @media (min-width: 700px) {
+    .review-image img{
+      width: 50%;
+    } 
+    .review-text{
+      width: 50%;
+    }
+  }

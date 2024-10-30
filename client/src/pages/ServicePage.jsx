@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; 
 import "../assets/css/ServicesPage.css";
-import ceo from "../assets/images/ceo.webp";
 import weldhead from '../assets/images/weldhead.webp';
 import pipe from '../assets/images/pipe.webp';
 import maintenance from '../assets/images/maintenance.webp';
@@ -14,12 +13,12 @@ function ServicePage() {
         {
             service: "Wellhead Installation",
             img: weldhead,
-            path: "/services/wellhead-installation",
+            path: "/service/services/wellhead-installation",
         },
         {
             service: "Pipe Inspection",
             img: pipe,
-            path: "/services/pipe-inspection",
+            path: "/service/services/pipe-inspection",
         },
         {
             service: "Equipment Maintenance",
@@ -29,17 +28,17 @@ function ServicePage() {
         {
             service: "Waste Management",
             img: waste,
-            path: "/services/waste-management",
+            path: "/service/services/waste-management",
         },
         {
             service: "Global Procurement",
             img: Global,
-            path: "/services/global-procurement",
+            path: "/service/services/global-procurement",
         },
         {
             service: "Manpower Supply",
             img: man,
-            path: "/services/manpower-supply",
+            path: "/service/services/manpower-supply",
         },
     ];
 
