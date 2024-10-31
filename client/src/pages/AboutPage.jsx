@@ -1,8 +1,9 @@
 import '../assets/css/About.css';
-import bg from '../assets/images/bg.webp';
-import ceo from '../assets/images/ceo.webp';
-import { FaGreaterThan } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import bg from '../assets/images/bg.webp';
+import equip2 from '../assets/images/equip2.webp';
+import equip1 from '../assets/images/equip1.webp';
+import { FaGreaterThan } from 'react-icons/fa';
 
 function AboutPage({ isAboutPage }) {
   const fadeInUp = {
@@ -34,10 +35,10 @@ function AboutPage({ isAboutPage }) {
         viewport={{ once: false, amount: 0.3 }}
         variants={rotateIn}
       >
-        <img className='img-top' src={bg} alt='Background' />
+        <img className='img-top' src={equip2} alt='Background' />
         <motion.img
           className='img-bottom'
-          src={ceo}
+          src={equip1}
           alt='CEO'
           initial="hidden"
           animate="visible"

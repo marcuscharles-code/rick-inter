@@ -1,13 +1,19 @@
-import ceo from '../assets/images/ceo.webp';
-import shell from '../assets/images/shell.webp';
 import '../assets/css/LogoScroll.css';
+import nnpc from '../assets/images/nnpc.webp';
+import shell from '../assets/images/shell.webp';
+import exon from '../assets/images/exon.webp';
+import addax from '../assets/images/addax.webp';
+import agip from '../assets/images/agip.webp';
 
 function LogoScroll() {
     const brandLogos = [
         { id: 1, name: "Logo1", img: shell },
-        { id: 2, name: "Logo2", img: ceo },
-        { id: 3, name: "Logo3", img: ceo },
-        { id: 4, name: "Logo4", img: ceo },
+        { id: 2, name: "Logo2", img: exon },
+        { id: 3, name: "Logo3", img: addax },
+        { id: 4, name: "Logo4", img: nnpc },
+        { id: 4, name: "Logo5", img: agip },
+        { id: 4, name: "Logo6", img: agip },
+        { id: 4, name: "Logo7", img: agip },
     ];
 
     return (

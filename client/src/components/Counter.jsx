@@ -12,8 +12,8 @@ function Counter() {
   return (
     <div className='counter-gen-div'>
       <div className='counter-box'>
-        {counts.map((item, index) => (
-          <div key={index} className='counter-item'>
+        {counts.map((item, indexItem) => (
+          <div key={indexItem} className='counter-item'>
             <h1>
               {item.title === 'Company Established' ? (
                 String(item.count)
