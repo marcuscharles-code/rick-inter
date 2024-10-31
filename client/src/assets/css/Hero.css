@@ -67,6 +67,7 @@
   font-size: 2rem;
   color: var(--orange);
   font-family: Anton, sans-serif;
+  display: none;
 }
 
 .hero-nav .hero-list {
@@ -316,6 +317,7 @@
   .hero-nav .hero-overlay {
     z-index: 10;
     width: 325px;
+    display: none;
     inset: 0 0 0 auto;
     box-shadow: 0 0 4px 3px rgba(50, 50, 50, 0.05);
   }
@@ -341,6 +343,10 @@
   .hero-nav .hero-overlay div {
     display: block;
   }
+
+  .hero-list label svg {
+    display: none;
+}
 
   .hero-nav .hero-overlay ul {
     display: none;
