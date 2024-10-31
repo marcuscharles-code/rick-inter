@@ -42,7 +42,7 @@ export default function Hero({ text }) {
     { icon: <video src={eyescan} autoPlay loop muted />, title: 'OUR VISION', text: 'Your official source for 24/7 Rick support' },
     { icon: <video src={mission} autoPlay loop muted />, title: 'OUR MISSION', text: 'Cost analysis helps evaluate contract profitability' },
     { icon: <video src={value} autoPlay loop muted />, title: 'CORE VALUES', text: 'Fulfill one\'s task, to do what is required to do' },
-];
+  ];
 
 
   const lists = [
@@ -110,8 +110,8 @@ export default function Hero({ text }) {
       )}
       {isHomeRoute && (
         <div className='hero-modal'>
-          {items.map((item) => (
-            <div key={item.icon}>
+          {items.map((item, index) => (
+            <div key={index}>
               <div className='animated-icon'>
                 {item.icon}
               </div>
@@ -119,6 +119,7 @@ export default function Hero({ text }) {
               <span>{item.text}</span>
             </div>
           ))}
+
         </div>
       )}
     </section>

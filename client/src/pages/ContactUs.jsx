@@ -9,8 +9,6 @@ function ContactUs() {
     const contactRef = useRef(null);
     const [loading, setLoading] = useState(false);
 
-
-
     const inputVariants = {
         hidden: (direction) => ({
             opacity: 0,
@@ -39,8 +37,16 @@ function ContactUs() {
             { threshold: 0.1 }
         );
 
-        if (contactRef.current) observer.observe(contactRef.current);
-        return () => observer.unobserve(contactRef.current);
+        if (contactRef.current) {
+            observer.observe(contactRef.current);
+        }
+
+        // Cleanup function to unobserve when the component unmounts
+        return () => {
+            if (contactRef.current) {
+                observer.unobserve(contactRef.current);
+            }
+        };
     }, []);
 
     // Handle form submission
@@ -54,15 +60,14 @@ function ContactUs() {
             e.target,
             'GQCNGIzt19RO-YomF'
         )
-            .then(
-                (result) => {
-                    alert('Message Sent! We will get back to you shortly.');
-                    e.target.reset(); 
-                },
-                (error) => {
-                    alert('An error occurred. Please try again.');
-                }
-            )
+            .then((result) => {
+                alert('Message Sent! We will get back to you shortly.');
+                e.target.reset(); 
+            })
+            .catch((error) => {
+                alert('An error occurred. Please try again.');
+                console.error("EmailJS error: ", error); // Log the error for debugging
+            })
             .finally(() => setLoading(false));
     };
 
@@ -141,7 +146,6 @@ function ContactUs() {
                     >
                         {loading ? 'Sending...' : 'Send Message'}
                     </motion.button>
-
                 </form>
             </div>
         </section>
