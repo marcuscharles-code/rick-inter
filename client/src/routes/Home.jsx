@@ -6,6 +6,7 @@ import ContactUs from '../pages/ContactUs';
 import LearnMore from '../pages/LearnMore';
 import ReviewPage from '../pages/ReviewPage';
 import useDocumentTitle from '../helpers/useDocumentTitle';
+import LogoScroll from '../pages/LogoScroll';
 
 export default function Home() {
   useDocumentTitle('Home - Rick');
@@ -19,6 +20,7 @@ export default function Home() {
       <ReviewPage />
       <OurTeam />
       <LearnMore />
+      <LogoScroll />
     </main>
   );
 }
