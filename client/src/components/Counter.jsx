@@ -1,5 +1,6 @@
 import '../assets/css/Counter.css';
 import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 
 function Counter() {
   const counts = [
@@ -9,8 +10,10 @@ function Counter() {
     { title: 'Business Partners', count: 25 }
   ];
 
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+
   return (
-    <div className='counter-gen-div'>
+    <div className='counter-gen-div' ref={ref}>
       <div className='counter-box'>
         {counts.map((item, indexItem) => (
           <div key={indexItem} className='counter-item'>
@@ -18,7 +21,15 @@ function Counter() {
               {item.title === 'Company Established' ? (
                 String(item.count)
               ) : (
-                <CountUp start={0} end={item.count} duration={2.5} separator='' enableScrollSpy scrollSpyOnce />
+                inView && (
+                  <CountUp
+                    start={0}              
+                    end={item.count}       
+                    duration={2.5}          
+                    separator=''             
+                    useEasing               
+                  />
+                )
               )}
             </h1>
             <p>{item.title}</p>
