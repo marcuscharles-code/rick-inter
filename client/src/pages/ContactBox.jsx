@@ -1,6 +1,7 @@
 import '../assets/css/ContactBox.css';
 import officeBuilding from '../assets/images/officeBuilding.png'
 import customerService from '../assets/images/customerService.png'
+import { Link } from 'react-router-dom';
 
 const contactData = [
     {
@@ -16,6 +17,7 @@ const contactData = [
         title: 'Sales Inquiries',
         description: 'Reach out to our sales team for any questions or quotes.',
         buttonText: 'Request a Quote',
+        url: '/contact'
     },
 ];
 
@@ -35,7 +37,9 @@ function ContactBox() {
                         <h3 className="contact-title">{contact.title}</h3>
                     </a>
                     <p className="contact-description">{contact.description}</p>
-                    <button className="contact-button">{contact.buttonText}</button>
+                   <Link to={contact.url}>
+                        <button className="contact-button">{contact.buttonText}</button>
+                   </Link>
                 </div>
             ))}
         </div>
