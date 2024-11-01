@@ -1,16 +1,15 @@
 .scroll-container {
     position: relative;
     overflow: hidden;
-    height: 12rem;
+    height: 15rem;
     width: 100vw;
     padding: 2rem;
 }
 
 .brand-div {
     display: flex;
-    gap: 2rem; /* Keep the gap if you want space between logos */
+    gap: 2rem; 
     animation: scroll 20s linear infinite;
-    /* Use width: max-content to ensure content takes the full width of all elements */
     width: max-content;
 }
 
@@ -18,7 +17,7 @@
     width: 8rem;
     height: auto;
     border-radius: 10px;
-    flex-shrink: 0; /* Prevent logos from shrinking */
+    flex-shrink: 0;
 }
 
 .brand-logo img {
@@ -27,7 +26,7 @@
     object-fit: cover;
 }
 
-/* Fade effect at edges */
+
 .scroll-container::before,
 .scroll-container::after {
     content: '';

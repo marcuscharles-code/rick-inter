@@ -1,19 +1,36 @@
 import '../assets/css/Hero.css';
 import PropTypes from 'prop-types';
 import Logo2 from '../assets/images/Logo2.png';
-import equip2 from '../assets/images/equip2.webp';
-import eyescan from '../assets/images/eyescan.mp4'
-import value from '../assets/images/value.mp4'
-import mission from '../assets/images/mission.mp4'
+import equip2 from '../assets/images/equip2.webp'; 
+import tools9 from '../assets/images/tools9.webp'; 
+import ourservicebg from '../assets/images/ourservicebg.webp';
+import tools3 from '../assets/images/tools3.webp'; 
+import tools7 from '../assets/images/tools7.webp';
+import { useLocation } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
-
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Hero({ text }) {
   const location = useLocation();
   const [isSticky, setIsSticky] = useState(false);
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
   const overlayRef = useRef(null);
+
+  // Function to set the background image based on the current route
+  const getBackgroundImage = () => {
+    switch (location.pathname) {
+      case '/about':
+        return tools9;
+      case '/service':
+        return ourservicebg;
+      case '/portfolio':
+        return tools3;
+      case '/contact':
+        return tools7;
+      default:
+        return equip2; 
+    }
+  };
 
   const handleScroll = () => setIsSticky(window.scrollY > 0);
   const handleOverlayToggle = () => setIsOverlayVisible(!isOverlayVisible);
@@ -39,11 +56,10 @@ export default function Hero({ text }) {
   }, [isOverlayVisible]);
 
   const items = [
-    { icon: <video src={eyescan} autoPlay loop muted />, title: 'OUR VISION', text: 'Your official source for 24/7 Rick support' },
-    { icon: <video src={mission} autoPlay loop muted />, title: 'OUR MISSION', text: 'Cost analysis helps evaluate contract profitability' },
-    { icon: <video src={value} autoPlay loop muted />, title: 'CORE VALUES', text: 'Fulfill one\'s task, to do what is required to do' },
+    { icon: <video src="../assets/images/eyescan.mp4" autoPlay loop muted />, title: 'OUR VISION', text: 'Your official source for 24/7 Rick support' },
+    { icon: <video src="../assets/images/mission.mp4" autoPlay loop muted />, title: 'OUR MISSION', text: 'Cost analysis helps evaluate contract profitability' },
+    { icon: <video src="../assets/images/value.mp4" autoPlay loop muted />, title: 'CORE VALUES', text: 'Fulfill one\'s task, to do what is required to do' },
   ];
-
 
   const lists = [
     { title: 'Home', url: '/' },
@@ -57,7 +73,8 @@ export default function Hero({ text }) {
 
   return (
     <section className={`hero ${isHomeRoute ? 'home' : ''}`}>
-      <img src={equip2} alt='bg' />
+      {/* Use the function to get the appropriate background image */}
+      <img src={getBackgroundImage()} alt='bg' />
       <span></span>
       <div className={`hero-nav ${isSticky ? 'sticky' : ''}`}>
         <Link className='hero-logo'>
@@ -96,16 +113,15 @@ export default function Hero({ text }) {
       {isHomeRoute ? (
         <div className='hero-text'>
           <div className='heroPage-logo'>
-            <img src={Logo2} />
+            <img src={Logo2} alt='logo' />
           </div>
           <h2>Rick INTERNATIONAL</h2>
-          <h3><mark>RICK</mark>  INTERNATIONAL <br /> SERVICES LIMITED </h3>
-          {/* <p>We Build <mark>The Best.</mark></p> */}
+          <h3><mark>RICK</mark> INTERNATIONAL <br /> SERVICES LIMITED</h3>
         </div>
       ) : (
         <div className='hero-text'>
           <h3>{text}</h3>
-          <p><Link to="/">Home</Link> /<span>{text}</span></p>
+          <p><Link to="/">Home</Link> / <span>{text}</span></p>
         </div>
       )}
       {isHomeRoute && (
@@ -119,7 +135,6 @@ export default function Hero({ text }) {
               <span>{item.text}</span>
             </div>
           ))}
-
         </div>
       )}
     </section>
