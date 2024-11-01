@@ -1,6 +1,6 @@
 .counter-gen-div {
     display: flex;
-    background: url(../images/img1.webp) fixed no-repeat;
+    background: url(../images/counterimg.webp) fixed no-repeat;
     background-size: cover;
     width: 100%;
     height: auto;

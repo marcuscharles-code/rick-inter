@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 
 function Counter() {
   const counts = [
-    { title: 'Company Established', count: 2005 },
+    { title: 'Company Established', count: 2009 },
     { title: 'Projects Done', count: 225 },
     { title: 'Happy Clients', count: 150 },
     { title: 'Business Partners', count: 25 }
