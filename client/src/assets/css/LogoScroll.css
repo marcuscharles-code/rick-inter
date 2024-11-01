@@ -4,23 +4,21 @@
     height: 12rem;
     width: 100vw;
     padding: 2rem;
-    /* background: #000; */
 }
 
 .brand-div {
     display: flex;
-    gap: 2rem;
-    margin: auto;
+    gap: 2rem; /* Keep the gap if you want space between logos */
     animation: scroll 20s linear infinite;
+    /* Use width: max-content to ensure content takes the full width of all elements */
+    width: max-content;
 }
 
 .brand-logo {
     width: 8rem;
-    height: 8rem;
+    height: auto;
     border-radius: 10px;
-    flex-shrink: 0;
-    position: relative;
-    transition: opacity 0.5s ease;
+    flex-shrink: 0; /* Prevent logos from shrinking */
 }
 
 .brand-logo img {

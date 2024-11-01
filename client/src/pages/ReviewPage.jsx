@@ -2,24 +2,31 @@ import '../assets/css/Review.css';
 import { FaArrowRight, FaArrowLeft  } from "react-icons/fa";
 import { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
-import ceo from '../assets/images/ceo.webp';
-import Bg1 from '../assets/images/Bg1.webp';
-import Bg2 from '../assets/images/Bg2.webp';
+import nnpc from '../assets/images/nnpc.webp';
+import shell from '../assets/images/shell.webp';
+import agip from '../assets/images/agip.webp';
+import exon from '../assets/images/exon.webp';
+import addax from '../assets/images/addax.webp';
+import pan from '../assets/images/pan.webp';
+import platformpet from '../assets/images/platformpet.webp';
+import npdc from '../assets/images/npdc.webp';
+import oarj from '../assets/images/oarj.webp';
+
 
 function ReviewPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const reviews = [
     {
-      image: ceo,
+      image: nnpc,
       text: "Turpis ligula, ornare molestie maximus eu, vestibulum id massa. Nam bibendum lorem quis ultrices maximus.",
     },
     {
-      image: Bg1,
+      image: shell,
       text: "Integer interdum consectetur euismod. Phasellus pharetra est in lorem varius, ut malesuada leo tempor.",
     },
     {
-      image: Bg2,
+      image: agip,
       text: "Vivamus commodo, lectus at aliquam consectetur, justo libero facilisis est, at dictum metus.",
     },
   ];
