@@ -1,7 +1,7 @@
 import '../assets/css/Hero.css';
 import PropTypes from 'prop-types';
 import Logo2 from '../assets/images/Logo2.png';
-import hero from '../assets/images/hero.webp';
+import equip2 from '../assets/images/equip2.webp';
 import eyescan from '../assets/images/eyescan.mp4'
 import value from '../assets/images/value.mp4'
 import mission from '../assets/images/mission.mp4'
@@ -57,7 +57,7 @@ export default function Hero({ text }) {
 
   return (
     <section className={`hero ${isHomeRoute ? 'home' : ''}`}>
-      <img src={hero} alt='bg' />
+      <img src={equip2} alt='bg' />
       <span></span>
       <div className={`hero-nav ${isSticky ? 'sticky' : ''}`}>
         <Link className='hero-logo'>
@@ -98,7 +98,7 @@ export default function Hero({ text }) {
           <div className='heroPage-logo'>
             <img src={Logo2} />
           </div>
-          <h2>Rick</h2>
+          <h2>Rick INTERNATIONAL</h2>
           <h3><mark>RICK</mark>  INTERNATIONAL <br /> SERVICES LIMITED </h3>
           {/* <p>We Build <mark>The Best.</mark></p> */}
         </div>

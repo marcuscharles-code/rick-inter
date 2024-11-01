@@ -3,7 +3,7 @@ footer {
   height: auto;
   display: grid;
   position: relative;
-  background: var(--purple);
+  background: #301934;
 }
 
 footer .footer-content {
@@ -41,6 +41,7 @@ footer .footer-content {
 }
 
 .footer-content .footer-info a h4 {
+  display: none;
   font-size: 2rem;
   color: var(--orange);
   font-family: Anton, sans-serif;
@@ -148,7 +149,7 @@ footer .footer-content {
 
 footer .footer-copy {
   padding: 1.2rem;
-  background: var(--purple);
+  background: #301934;
   color: #fff;
   border: #fff solid 1px;
   border-left: none;

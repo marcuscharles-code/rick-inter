@@ -1,14 +1,14 @@
 import '../assets/css/Team.css';
 import { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
+import ceo from '../assets/images/ceo.webp';
 import img1 from '../assets/images/Bg1.webp';
 import img2 from '../assets/images/Bg2.webp';
 import { FaArrowRight, FaArrowLeft  } from "react-icons/fa";
-// import { PiGreaterThanThin } from "react-icons/pi";
-// import { PiLessThanThin } from "react-icons/pi";
+
 
 const teamMembers = [
-    { name: 'John Doe', position: 'Lead Engineer', phone: '123-456-7890', img: img1 },
+    { name: 'Mr. Ramos E. Ihekona', position: 'CEO / Managing Director', phone: '123-456-7890', img: ceo },
     { name: 'Jane Smith', position: 'Project Manager', phone: '987-654-3210', img: img2 },
     { name: 'efdkxm', position: 'Project Manager', phone: '987-654-3210', img: img2 },
     { name: 'ggggg', position: 'Project Manager', phone: '987-654-3210', img: img2 },

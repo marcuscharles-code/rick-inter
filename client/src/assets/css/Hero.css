@@ -39,7 +39,7 @@
   padding: 1rem;
   position: fixed;
   backdrop-filter: blur(10px);
-  background-color: rgba(102, 0, 102, 0.8);
+  background-color: #301934;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -50,8 +50,8 @@
 }
 
 .heroPage-logo{
-  width: 5rem;
-  height: 5rem;
+  width: 9rem;
+  height: 9rem;
   margin: 0 auto 2rem;
 
   /* background: #000; */
@@ -163,7 +163,7 @@
   width: 100%;
   color: #fff;
   padding: 1rem;
-  inset: 50% auto;
+  inset: 30% auto;
   user-select: none;
   position: absolute;
 }
@@ -183,7 +183,7 @@
   opacity: 0.08;
   font-weight: 400;
   inset: -50px auto;
-  font-size: 6.2rem;
+  font-size: 3rem;
   position: absolute;
   font-family: Anton, sans-serif;
 }
