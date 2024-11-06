@@ -43,9 +43,8 @@ export default function Work() {
         { img: warehouse, text: '12 Text' },
         { img: exitgate, text: '12 Text' },
         { img: equipimg, text: '12 Text' },
-    
     ];
-    
+
     const images = rows.map(row => ({
         src: row.img,
         title: row.text,
@@ -68,6 +67,16 @@ export default function Work() {
                     thumbnailWidth="20rem"
                     thumbnailHeight="20rem"
                     className="work-grid-item"
+                    renderItem={(image) => (
+                        <img 
+                            key={image.src} 
+                            src={image.src} 
+                            alt={image.description}
+                            title={image.title}
+                            loading="lazy" 
+                            className="work-img" 
+                        />
+                    )}
                 />
             </div>
             {visibleImages < images.length && ( // Show "See More" button if there are more images
