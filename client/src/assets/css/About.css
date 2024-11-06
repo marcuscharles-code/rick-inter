@@ -126,6 +126,12 @@
   margin-right: 5px;
   font-weight: 900;
 }
+@media (max-width: 398px ) {
+  .about-section{
+    margin-top: 50rem;
+  }
+  
+}
 
 @media (min-width: 700px) {
   .about-section{
