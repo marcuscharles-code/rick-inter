@@ -136,6 +136,9 @@
   .img-top{
     width: 80%;
   }
+  .about-section--small {
+    margin-top: 2rem; 
+  }
   
 }
 
