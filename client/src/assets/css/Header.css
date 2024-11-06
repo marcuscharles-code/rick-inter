@@ -20,6 +20,9 @@ header:after {
 
 header div:last-child,
 header div:first-child {
+  display: flex;
+}
+header div:first-child {
   display: none;
 }
 
