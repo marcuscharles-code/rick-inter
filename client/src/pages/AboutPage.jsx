@@ -1,6 +1,5 @@
 import '../assets/css/About.css';
 import { motion } from 'framer-motion';
-import bg from '../assets/images/bg.webp';
 import equip2 from '../assets/images/equip2.webp';
 import equip1 from '../assets/images/equip1.webp';
 import { FaGreaterThan } from 'react-icons/fa';

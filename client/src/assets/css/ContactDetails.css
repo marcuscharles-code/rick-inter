@@ -92,9 +92,9 @@
 
 
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
     .contact-details-section{ 
-        flex-direction: row ;
+        flex-direction: column ;
         height: 80vh;
     }
     .contact-head{
@@ -105,3 +105,12 @@
     }
 
 } 
+
+
+@media (min-width: 1024px){
+    .contact-details-section{ 
+        flex-direction: row ;
+        height: 80vh;
+    }
+
+}

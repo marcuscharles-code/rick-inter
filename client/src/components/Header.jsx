@@ -1,6 +1,6 @@
 import '../assets/css/Header.css';
 import { MdMail, MdLocationOn, MdOutlineCall  } from 'react-icons/md';
-import { FaFacebookF, FaXTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa6';
+// import { FaFacebookF, FaXTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa6';
 
 export default function Header() {
   return (
@@ -8,7 +8,7 @@ export default function Header() {
       <div>
         <p>
           <MdLocationOn />
-          <span>No. 3, Shell Location Road, Off Boskel Road, Km16, Ph-Aba Expressway, Port Harcourt</span>
+          <span>No. 3, Off Boskel Road, Km16, Ph-Aba Expressway, Port Harcourt</span>
         </p>
       </div>
       <div>
@@ -21,7 +21,7 @@ export default function Header() {
           <a href='tel:+2348037236306'>+234-803-723-6306</a>
         </p>
       </div>
-      <div>
+      {/* <div>
        
         <span>
           <a href=''><FaFacebookF size={16} /></a>
@@ -30,7 +30,7 @@ export default function Header() {
           <a href=''><FaInstagram size={16} /></a>
           <a href=''><FaYoutube size={16} /></a>
         </span>
-      </div>
+      </div> */}
     </header>
   );
 }

@@ -27,6 +27,7 @@
 
 body {
   overflow-x: hidden;
+  /* overflow-y: auto; */
 }
 
 body mark {
@@ -40,6 +41,7 @@ body main {
   width: 100%;
   display: grid;
   position: relative;
+  overflow: hidden;
 }
 
 body main section {
@@ -67,10 +69,10 @@ body main section mark {
   z-index: 99999;
   cursor: pointer;
   position: fixed;
-  /* border-radius: 0%; */
   visibility: hidden;
   place-items: center;
-  inset: auto 15px -15px auto;
+  bottom: 15px; 
+  right: 15px;  
   background-color: var(--orange);
 }
 
@@ -88,6 +90,5 @@ body main section mark {
 
 .scroll-top.active {
   opacity: 0.6;
-  bottom: 15px;
   visibility: visible;
 }

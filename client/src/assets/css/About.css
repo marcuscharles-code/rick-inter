@@ -130,16 +130,22 @@
 @media (min-width: 700px) {
   .about-section{
     flex-direction: row;
-    margin-top: 8rem;
+    margin-top: 15rem;
     justify-content: space-evenly;
     align-items: center;
 
   }
   .abt-img {
-    width: 25rem;
+    width: 50%;
     height: 25rem; 
     margin: 0 0 15rem
   }
+  .abt-content {
+   width: 50%;
+}
+.about-section--small {
+  margin-top: 1rem; 
+}
 
 }
 
