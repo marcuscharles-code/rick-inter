@@ -6,12 +6,26 @@ import img1 from '../assets/images/Bg1.webp';
 import img2 from '../assets/images/Bg2.webp';
 import { FaArrowRight, FaArrowLeft  } from "react-icons/fa";
 
+/*
+ - 
+   iv.  - 
+   v.    - 
+   vi.   - 
+   vii.  - 
+
+
+*/
+
+
 
 const teamMembers = [
-    { name: 'Mr. Ramos E. Ihekona', position: 'CEO / Managing Director', phone: '123-456-7890', img: ceo },
-    { name: 'Jane Smith', position: 'Project Manager', phone: '987-654-3210', img: img2 },
-    { name: 'efdkxm', position: 'Project Manager', phone: '987-654-3210', img: img2 },
-    { name: 'ggggg', position: 'Project Manager', phone: '987-654-3210', img: img2 },
+    { name: 'Mr. RAMOS IHEKONA', position: 'MD/CEO', phone: '123-456-7890', img: ceo },
+    { name: 'BETTY IHEKONA', position: 'HR MANAGER', phone: '987-654-3210', img: img2 },
+    { name: 'MICHEAL OKOBI', position: 'OPERATIONS LEAD', phone: '987-654-3210', img: img2 },
+    { name: 'NONSO ALONSO', position: 'HSE/QAQC', phone: '987-654-3210', img: img2 },
+    { name: 'JAPHET ADMIN', position: ' BUSINESS DEVELOPMENT LEAD', phone: '987-654-3210', img: img2 },
+    { name: 'RICHARD ALPHONSUS', position: 'MARKETING & SALES REP', phone: '987-654-3210', img: img2 },
+    { name: 'BLESSING NWALA', position: 'ACCOUNTANT', phone: '987-654-3210', img: img2 },
 ];
 
 function OurTeam() {

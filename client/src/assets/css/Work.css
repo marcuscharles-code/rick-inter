@@ -1,11 +1,23 @@
-/* Work.css */
-
 .work {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
+
+.work-box{
+  width: 100%;
+  overflow: hidden;
+ 
+}
+
+.lightb0x-container{
+   
+  display: flex;
+  align-items: center;
+    flex-direction: column;
+}
+
 
 .open-gallery-button {
     padding: 12px 24px;
@@ -34,4 +46,19 @@
   color: var(--orange);
   background: #fff;
   border: 2px var(--orange) solid;
+}
+
+
+@media (min-width: 768px) {
+  .work{
+    width: 70%;
+
+  }
+}
+
+@media (min-width: 992px) {
+  .work{
+    width: 40%;
+
+  }
 }

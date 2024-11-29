@@ -78,7 +78,7 @@ function AboutPage({ isAboutPage }) {
               'Expertise in Oil & Gas Solutions',
               'Commitment to Safety and Quality',
               'Local Insight with Global Standards',
-              'Corporate Social Responsibilit'
+              'Corporate Social Responsibility'
             ].map((reason, index) => (
               <motion.div
                 key={index}

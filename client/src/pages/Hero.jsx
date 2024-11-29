@@ -9,11 +9,13 @@ import counterimg from '../assets/images/counterimg.webp';
 import eyescan from '../assets/images/eyescan.mp4';
 import value from '../assets/images/value.mp4';
 import mission from '../assets/images/mission.mp4';
+// import Typed from 'typed.js'
 import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
 export default function Hero({ text }) {
   const location = useLocation();
+  // const mottoRef = useRef(null);
   const [isSticky, setIsSticky] = useState(false);
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
   const overlayRef = useRef(null);
@@ -58,9 +60,9 @@ export default function Hero({ text }) {
   }, [isOverlayVisible]);
 
   const items = [
-    { icon: <video src={eyescan} autoPlay loop muted />, title: 'OUR VISION', text: 'Your official source for 24/7 Rick support' },
-    { icon: <video src={mission} autoPlay loop muted />, title: 'OUR MISSION', text: 'Cost analysis helps evaluate contract profitability' },
-    { icon: <video src={value} autoPlay loop muted />, title: 'CORE VALUES', text: 'Fulfill one\'s task, to do what is required to do' },
+    { icon: <video src={eyescan} autoPlay loop muted />, title: 'OUR VISION', text: 'determined to be recognized for integrity, exceptional quality, and efficiency' },
+    { icon: <video src={mission} autoPlay loop muted />, title: 'OUR MISSION', text: 'delivers top-notch technical services promptly and cost-effectively, benefiting clients and staff'},
+    { icon: <video src={value} autoPlay loop muted />, title: 'CORE VALUES', text: 'We conduct business with honesty, fostering trust and accountability with clients, employees, and investors'},
   ];
 
   const lists = [
@@ -70,6 +72,26 @@ export default function Hero({ text }) {
     { title: 'Portfolio', url: '/portfolio' },
     { title: 'Contact', url: '/contact' },
   ];
+
+  // useEffect(() => {
+  //   const options = {
+  //     strings: [
+  //       'Hello, how are you?',
+  //       'Welcome to Rick International!',
+  //       'Innovating the future together.',
+  //     ],
+  //     typeSpeed: 50,
+  //     backSpeed: 30,
+  //     loop: true,
+  //   };
+
+  //   const typed = new Typed(mottoRef.current, options);
+
+  //   return () => {
+  //     typed.destroy();
+  //   };
+  // }, []);
+
 
   const isHomeRoute = location.pathname === '/';
 
@@ -113,12 +135,14 @@ export default function Hero({ text }) {
       </div>
       {isHomeRoute ? (
         <div className='hero-text'>
-          <div className='heroPage-logo'>
+          {/* <div className='heroPage-logo'>
             <img src={Logo2} />
-          </div>
+          </div> */}
           <h2>Rick INTERNATIONAL</h2>
           <h3><mark>RICK</mark> INTERNATIONAL <br /> SERVICES LIMITED </h3>
+          {/* <p className='motto' ref={mottoRef}></p> */}
         </div>
+        
       ) : (
         <div className='hero-text'>
           <h3>{text}</h3>

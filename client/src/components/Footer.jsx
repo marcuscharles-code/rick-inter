@@ -32,7 +32,8 @@ export default function Footer() {
           </p>
           <p>
             <MdOutlineCall  />
-            <a href='tel:+2348037236306'>+234-803-7236-306</a>
+            <a href='tel:+2348105286284'>08105286284</a>
+            <a href='tel:+2347047074069'>07047074069</a>
           </p>
           <p>
             <MdMail />
@@ -49,7 +50,7 @@ export default function Footer() {
         </div>
       </div>
       <div className='footer-copy'>
-        <p>&copy; Copyright Rick Metal Works</p>
+      <p>&copy; Copyright: Rick Int&#39;l Services</p>
       </div>
     </footer>
   );

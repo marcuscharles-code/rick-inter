@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Lightbox from 'react-lightbox-component';
-import 'react-lightbox-component/build/css/index.css'; 
+import 'react-lightbox-component/build/css/index.css';
 import '../assets/css/Work.css';
 import frontgate from '../assets/images/frontgate.webp';
 import tools1 from '../assets/images/tools1.webp';
@@ -62,22 +62,24 @@ export default function Work() {
     return (
         <section className="work">
             <div className="work-box">
-                <Lightbox
-                    images={images.slice(0, visibleImages)} // Display only the visible images
-                    thumbnailWidth="20rem"
-                    thumbnailHeight="20rem"
-                    className="work-grid-item"
-                    renderItem={(image) => (
-                        <img 
-                            key={image.src} 
-                            src={image.src} 
+                <div className='work-img-div'>
+                    <Lightbox
+                        images={images.slice(0, visibleImages)} // Display only the visible images
+                        thumbnailWidth="100%"
+                        thumbnailHeight="20rem"     
+                         renderItem={(image) => (
+
+                        <img
+                            key={image.src}
+                            src={image.src}
                             alt={image.description}
                             title={image.title}
-                            loading="lazy" 
-                            className="work-img" 
+                            loading="lazy"
                         />
+
                     )}
-                />
+                    />
+                </div>
             </div>
             {visibleImages < images.length && ( // Show "See More" button if there are more images
                 <button onClick={loadMoreImages} className="load-more">
