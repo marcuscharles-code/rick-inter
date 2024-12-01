@@ -27,9 +27,9 @@ function ContactDetails() {
                             <span>info@rislng.com</span>
                         </a>
 
-                        <br /><br />
+                        {/* <br /><br /> */}
 
-                        <p><strong>Rick Business Office</strong></p>
+                        {/* <p><strong>Rick Business Office</strong></p>
                         <a href="" target="_blank" rel="noopener noreferrer">
                         <FaMapLocationDot />
                             <span>No. 16 Chief Albert Iyorah Street, Lekki Phase 1, Lagos, Nigeria</span>
@@ -37,7 +37,7 @@ function ContactDetails() {
                         <a href="tel:07064186750">
                             <MdAddCall />
                             <span>07064186750</span>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>

@@ -1,0 +1,96 @@
+import * as React from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import  Zoom from "yet-another-react-lightbox/styles.css";
+import '../assets/css/Work.css'
+
+// Import images
+import frontgate from '../assets/images/frontgate.webp';
+import tools1 from '../assets/images/tools1.webp';
+import tools2 from '../assets/images/tools2.webp';
+import tools3 from '../assets/images/tools3.webp';
+import tools4 from '../assets/images/tools4.webp';
+import tools5 from '../assets/images/tools5.webp';
+import tools6 from '../assets/images/tools6.webp';
+import tools7 from '../assets/images/tools7.webp';
+import tools8 from '../assets/images/tools8.webp';
+import tools9 from '../assets/images/tools9.webp';
+import tools10 from '../assets/images/tools10.webp';
+import tools11 from '../assets/images/tools11.webp';
+import tools12 from '../assets/images/tools12.webp';
+import tools14 from '../assets/images/tools14.webp';
+import tools15 from '../assets/images/tools15.webp';
+import warehouse from '../assets/images/warehouse.webp';
+import testbay from '../assets/images/testbay.webp';
+import exitgate from '../assets/images/exitgate.webp';
+import equipimg from '../assets/images/equipimg.webp';
+
+export default function Gallery() {
+  const [open, setOpen] = React.useState(false);
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+
+  const images = [
+    { src: frontgate, alt: "Front Gate" },
+    { src: tools1, alt: "Tools 1" },
+    { src: tools2, alt: "Tools 2" },
+    { src: tools3, alt: "Tools 3" },
+    { src: tools4, alt: "Tools 4" },
+    { src: tools5, alt: "Tools 5" },
+    { src: tools6, alt: "Tools 6" },
+    { src: tools7, alt: "Tools 7" },
+    { src: tools8, alt: "Tools 8" },
+    { src: tools9, alt: "Tools 9" },
+    { src: tools10, alt: "Tools 10" },
+    { src: tools11, alt: "Tools 11" },
+    { src: tools12, alt: "Tools 12" },
+    { src: tools14, alt: "Tools 14" },
+    { src: tools15, alt: "Tools 15" },
+    { src: warehouse, alt: "Warehouse" },
+    { src: testbay, alt: "Test Bay" },
+    { src: exitgate, alt: "Exit Gate" },
+    { src: equipimg, alt: "Equipment" },
+  ];
+
+  const handleImageClick = (index) => {
+    setCurrentIndex(index);
+    setOpen(true);
+  };
+
+  return (
+    <>
+      <div className="gallery">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className="pics"
+            style={{ cursor: 'pointer' }}
+            onClick={() => handleImageClick(index)}
+          >
+            <img src={image.src} alt={image.alt} />
+          </div>
+        ))}
+      </div>
+
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        currentIndex={currentIndex}
+        slides={images.map(image => ({
+          src: image.src,
+          alt: image.alt,
+          width: 3840,
+          height: 2560,
+          srcSet: [
+            { src: image.src, width: 320, height: 213 },
+            { src: image.src, width: 640, height: 427 },
+            { src: image.src, width: 1200, height: 800 },
+            { src: image.src, width: 2048, height: 1365 },
+            { src: image.src, width: 3840, height: 2560 },
+          ]
+        }))}
+        plugins={[ Zoom()]}
+      />
+        
+    </>
+  );
+}

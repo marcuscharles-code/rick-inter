@@ -2,7 +2,7 @@ import '../assets/css/Team.css';
 import { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import ceo from '../assets/images/ceo.webp';
-import img1 from '../assets/images/Bg1.webp';
+import businessDevelopment from '../assets/images/businessDevelopment.webp';
 import img2 from '../assets/images/Bg2.webp';
 import { FaArrowRight, FaArrowLeft  } from "react-icons/fa";
 
@@ -22,8 +22,8 @@ const teamMembers = [
     { name: 'Mr. RAMOS IHEKONA', position: 'MD/CEO', phone: '123-456-7890', img: ceo },
     { name: 'BETTY IHEKONA', position: 'HR MANAGER', phone: '987-654-3210', img: img2 },
     { name: 'MICHEAL OKOBI', position: 'OPERATIONS LEAD', phone: '987-654-3210', img: img2 },
-    { name: 'NONSO ALONSO', position: 'HSE/QAQC', phone: '987-654-3210', img: img2 },
-    { name: 'JAPHET ADMIN', position: ' BUSINESS DEVELOPMENT LEAD', phone: '987-654-3210', img: img2 },
+    { name: 'NONSO ALONSO', position: 'BUSINESS DEVELOPMENT LEAD', phone: '987-654-3210', img: businessDevelopment },
+    { name: 'JAPHET ADMIN', position: 'HSE/QAQC', phone: '987-654-3210', img: img2 },
     { name: 'RICHARD ALPHONSUS', position: 'MARKETING & SALES REP', phone: '987-654-3210', img: img2 },
     { name: 'BLESSING NWALA', position: 'ACCOUNTANT', phone: '987-654-3210', img: img2 },
 ];

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Lightbox from 'react-lightbox-component';
 import 'react-lightbox-component/build/css/index.css';
 import '../assets/css/Work.css';
+
+// Importing all images
 import frontgate from '../assets/images/frontgate.webp';
 import tools1 from '../assets/images/tools1.webp';
 import tools2 from '../assets/images/tools2.webp';
@@ -23,29 +25,31 @@ import exitgate from '../assets/images/exitgate.webp';
 import equipimg from '../assets/images/equipimg.webp';
 
 export default function Work() {
+    // Data for images and text
     const rows = [
         { img: frontgate, text: '1 Text' },
         { img: tools1, text: '2 Text' },
         { img: tools2, text: '3 Text' },
-        { img: tools3, text: '3 Text' },
-        { img: tools4, text: '3 Text' },
-        { img: tools5, text: '4 Text' },
-        { img: tools6, text: '5 Text' },
-        { img: tools7, text: '6 Text' },
-        { img: tools8, text: '7 Text' },
-        { img: tools9, text: '8 Text' },
-        { img: tools10, text: '9 Text' },
-        { img: tools11, text: '10 Text' },
-        { img: tools12, text: '11 Text' },
-        { img: tools14, text: '12 Text' },
-        { img: tools15, text: '12 Text' },
-        { img: testbay, text: '12 Text' },
-        { img: warehouse, text: '12 Text' },
-        { img: exitgate, text: '12 Text' },
-        { img: equipimg, text: '12 Text' },
+        { img: tools3, text: '4 Text' },
+        { img: tools4, text: '5 Text' },
+        { img: tools5, text: '6 Text' },
+        { img: tools6, text: '7 Text' },
+        { img: tools7, text: '8 Text' },
+        { img: tools8, text: '9 Text' },
+        { img: tools9, text: '10 Text' },
+        { img: tools10, text: '11 Text' },
+        { img: tools11, text: '12 Text' },
+        { img: tools12, text: '13 Text' },
+        { img: tools14, text: '14 Text' },
+        { img: tools15, text: '15 Text' },
+        { img: testbay, text: '16 Text' },
+        { img: warehouse, text: '17 Text' },
+        { img: exitgate, text: '18 Text' },
+        { img: equipimg, text: '19 Text' },
     ];
 
-    const images = rows.map(row => ({
+    // Mapping rows to Lightbox-compatible format
+    const images = rows.map((row) => ({
         src: row.img,
         title: row.text,
         description: row.text,
@@ -56,28 +60,17 @@ export default function Work() {
 
     // Function to load more images
     const loadMoreImages = () => {
-        setVisibleImages(prevVisible => Math.min(prevVisible + 4, images.length));
+        setVisibleImages((prevVisible) => Math.min(prevVisible + 4, images.length));
     };
 
     return (
         <section className="work">
             <div className="work-box">
-                <div className='work-img-div'>
+                <div className="work-img-div">
                     <Lightbox
                         images={images.slice(0, visibleImages)} // Display only the visible images
                         thumbnailWidth="100%"
-                        thumbnailHeight="20rem"     
-                         renderItem={(image) => (
-
-                        <img
-                            key={image.src}
-                            src={image.src}
-                            alt={image.description}
-                            title={image.title}
-                            loading="lazy"
-                        />
-
-                    )}
+                        thumbnailHeight="20rem"
                     />
                 </div>
             </div>
