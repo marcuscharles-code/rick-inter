@@ -87,6 +87,7 @@ export default function Gallery() {
             { src: image.src, width: 3840, height: 2560 },
           ]
         }))}
+        zoom={true}
         
       />
         
