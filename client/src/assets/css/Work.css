@@ -46,6 +46,13 @@
   padding: 10px;
 }
 
+/* Ensure images in the Lightbox take up full space */
+.react-photos-lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 
 @media (min-width: 1200px) {
   .gallery {
