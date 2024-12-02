@@ -117,28 +117,28 @@
     color: #fff;
     background: transparent;
     padding: 10px;
-    z-index: 2; /* Ensure it stays above the overlay */
+    z-index: 2; 
   }
   
   .team-member-name {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    color: #fec76f; /* Gold color for name */
+    color: #fec76f; 
     margin-bottom: 0.5rem;
     display: block;
   }
   
   .team-member-position {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: normal;
-    color: #ccc; /* Light gray color */
+    color: #ccc; 
     display: block;
     margin-bottom: 0.5rem;
   }
   
-  .team-member-phone {
+  .team-member-phone a{
     font-size: 1.4rem;
-    color: #fec76f; /* Gold color */
+    color: #fec76f; 
     display: block;
   }
   

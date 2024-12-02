@@ -18,6 +18,7 @@ header:after {
   background-color: #ffffff1a;
 }
 
+
 header div:last-child,
 header div:first-child {
   display: flex;
@@ -48,6 +49,10 @@ header div p svg,
 header div a:hover,
 header div span svg:hover {
   color: var(--orange);
+}
+.media-links{
+  display: flex;
+  gap: 0.4;
 }
 
 @media all and (min-width: 700px) {

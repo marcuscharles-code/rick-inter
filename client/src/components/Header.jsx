@@ -23,7 +23,7 @@ export default function Header() {
       </div>
       <div>
        
-        <span>
+        <span className='media-links'>
           <a href=''><FaFacebookF size={16} /></a>
           <a href=''><FaXTwitter size={16} /></a>
           <a href=''><FaLinkedinIn size={16} /></a>

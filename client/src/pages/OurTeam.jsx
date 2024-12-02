@@ -4,7 +4,7 @@ import { useSwipeable } from 'react-swipeable';
 import ceo from '../assets/images/ceo.webp';
 import businessDevelopment from '../assets/images/businessDevelopment.webp';
 import img2 from '../assets/images/Bg2.webp';
-import { FaArrowRight, FaArrowLeft  } from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 /*
  - 
@@ -85,7 +85,7 @@ function OurTeam() {
                     AirForce Trained Veteran / Precision T.I.G. & M.I.G. Welding, 39 Years!
                 </p>
 
-               
+
             </div>
 
             <div {...swipeHandlers} className="team-photo-container">
@@ -99,7 +99,7 @@ function OurTeam() {
                         <p className="team-member-info">
                             <strong className="team-member-name">{teamMembers[currentIndex].name}</strong>
                             <span className="team-member-position">{teamMembers[currentIndex].position}</span>
-                            <span className="team-member-phone">{teamMembers[currentIndex].phone}</span>
+                            <span className="team-member-phone"> <a href={`tel:${teamMembers[currentIndex].phone}`}>{teamMembers[currentIndex].phone}</a></span>
                         </p>
                     </span>
                 </div>
@@ -120,7 +120,7 @@ function OurTeam() {
                         </span>
                     </div>
                 )}
-                
+
                 <div className="arrow-container">
                     <FaArrowLeft className="arrow arrow-left" onClick={handleSwipeRight} />
                     <FaArrowRight className="arrow arrow-right" onClick={handleSwipeLeft} />

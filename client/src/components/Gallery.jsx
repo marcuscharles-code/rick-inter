@@ -1,7 +1,6 @@
 import * as React from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import  Zoom from "yet-another-react-lightbox/styles.css";
 import '../assets/css/Work.css'
 
 // Import images
@@ -88,7 +87,7 @@ export default function Gallery() {
             { src: image.src, width: 3840, height: 2560 },
           ]
         }))}
-        plugins={[ Zoom()]}
+        
       />
         
     </>
