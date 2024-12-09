@@ -46,11 +46,11 @@
   padding: 10px;
 }
 
-.react-lightbox img {
+/* .react-lightbox img {
   object-fit: contain;
   width: auto;
   height: auto;
-}
+} */
 
 /* .react-photos-lightbox img {
   max-width: 100%;

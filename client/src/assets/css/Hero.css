@@ -76,6 +76,7 @@
   z-index: 9;
   display: flex;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hero-nav .hero-overlay + .hero-list {

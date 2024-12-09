@@ -3,6 +3,8 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import '../assets/css/Work.css'
 
+
+
 // Import images
 import frontgate from '../assets/images/frontgate.webp';
 import tools1 from '../assets/images/tools1.webp';

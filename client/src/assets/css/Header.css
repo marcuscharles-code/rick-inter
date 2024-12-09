@@ -26,6 +26,11 @@ header div:first-child {
 header div:first-child {
   display: none;
 }
+.media-links {
+  display: flex;
+  gap: 1rem; 
+}
+
 
 header div,
 header div p {
@@ -50,10 +55,8 @@ header div a:hover,
 header div span svg:hover {
   color: var(--orange);
 }
-.media-links{
-  display: flex;
-  gap: 0.4;
-}
+
+
 
 @media all and (min-width: 700px) {
   header {

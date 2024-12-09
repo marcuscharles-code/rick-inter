@@ -23,7 +23,7 @@ function ServicePage() {
         {
             service: "Equipment Maintenance",
             img: maintenance,
-            path: "/services/equipment-maintenance",
+            path: "/service/services/equipment-maintenance",
         },
         {
             service: "Waste Management",
