@@ -2,10 +2,10 @@ import { useParams, useNavigate } from "react-router-dom";
 import '../assets/css/ServicesPage.css'
 import weldhead from '../assets/images/weldhead.webp';
 import pipe from '../assets/images/pipe.webp';
-import maintenance from '../assets/images/maintenance.webp'
-import waste from '../assets/images/waste.webp'
-import Global from '../assets/images/Global.webp'
-import man from '../assets/images/man.webp'
+import equipment from '../assets/images/equipment.webp'
+import globalimg from '../assets/images/globalimg.webp'
+import technicalSupport from '../assets/images/technicalSupport.webp'
+import manpower from '../assets/images/manpower.webp'
 
 
 const serviceDetails = {
@@ -22,22 +22,22 @@ const serviceDetails = {
   "equipment-maintenance": {
     title: "Equipment Maintenance",
     description: "We provide tailored maintenance solutions to enhance the durability and efficiency of critical wellhead systems. Our preventive approach reduces the likelihood of failures and optimizes operational performance through regular assessments and timely repairs.",
-    img: maintenance,
+    img: equipment,
   },
-  "waste-management": {
+  "technical-support": {
     title: "Technical Support",
     description: "We offer specialized technical assistance for wellhead systems, addressing installation, troubleshooting, and operational challenges.",
-    img: waste,
+    img: technicalSupport,
   },
   "global-procurement": {
     title: "Global Procurement",
     description: "Through strategic partnerships with OEMs, we procure and supply premium wellhead components, xmas trees, and other vital oil and gas equipment. Our streamlined processes ensure cost-effective solutions and prompt delivery to meet specific project demands.",
-    img: Global,
+    img: globalimg,
   },
   "manpower-supply": {
     title: "Manpower Supply",
     description: "We offer qualified personnel, including engineers, technicians, and field specialists, to support various stages of oil and gas operations. Our manpower solutions ensure access to experienced professionals for seamless project execution.",
-    img: man,
+    img: manpower,
   },
 };
 

@@ -100,13 +100,6 @@ export default function Gallery() {
           width: 3840,
           height: 2560,
           srcSet: undefined
-          // srcSet: [
-          //   { src: image.src, width: 320, height: 213 },
-          //   { src: image.src, width: 640, height: 427 },
-          //   { src: image.src, width: 1200, height: 800 },
-          //   { src: image.src, width: 2048, height: 1365 },
-          //   { src: image.src, width: 3840, height: 2560 },
-          // ]
         }))}
         zoom={true}
         

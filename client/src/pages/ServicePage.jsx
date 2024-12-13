@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"; 
 import "../assets/css/ServicesPage.css";
 import weldhead from '../assets/images/weldhead.webp';
-import rickinternationalservices from '../assets/images/rickinternationalservices.webp';
-import maintenance from '../assets/images/maintenance.webp';
-import waste from '../assets/images/waste.webp';
-import Global from '../assets/images/Global.webp';
-import man from '../assets/images/man.webp';
+import pipe from '../assets/images/pipe.webp';
+import equipment from '../assets/images/equipment.webp';
+import globalimg from '../assets/images/globalimg.webp';
+import technicalSupport from '../assets/images/technicalSupport.webp';
+import manpower from '../assets/images/manpower.webp';
 
 
 function ServicePage() {
@@ -17,27 +17,27 @@ function ServicePage() {
         },
         {
             service: "Pipe Inspection",
-            img: rickinternationalservices,
+            img: pipe,
             path: "/service/services/pipe-inspection",
         },
         {
             service: "Equipment Maintenance",
-            img: maintenance,
+            img: equipment,
             path: "/service/services/equipment-maintenance",
         },
         {
             service: "Technical support",
-            img: waste,
-            path: "/service/services/waste-management",
+            img: technicalSupport,
+            path: "/service/services/technical-support",
         },
         {
             service: "Global Procurement",
-            img: Global,
+            img: globalimg,
             path: "/service/services/global-procurement",
         },
         {
             service: "Manpower Supply",
-            img: man,
+            img: manpower,
             path: "/service/services/manpower-supply",
         },
     ];
