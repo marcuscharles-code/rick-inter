@@ -25,12 +25,30 @@ import warehouse from '../assets/images/warehouse.webp';
 import testbay from '../assets/images/testbay.webp';
 import exitgate from '../assets/images/exitgate.webp';
 import equipimg from '../assets/images/equipimg.webp';
+import rickinternationalservices from '../assets/images/rickinternationalservices.webp';
+import rickinternationalservices2 from '../assets/images/rickinternationalservices2.webp';
+import rickinternationalservices3 from '../assets/images/rickinternationalservices3.webp';
+import rickinternationalservices4 from '../assets/images/rickinternationalservices4.webp';
+import rickinternationalservices5 from '../assets/images/rickinternationalservices5.webp';
+import rickinternationalservices6 from '../assets/images/rickinternationalservices6.webp';
+import rickinternationalservices7 from '../assets/images/rickinternationalservices7.webp';
+import rickinternationalservices8 from '../assets/images/rickinternationalservices8.webp';
+import rickinternationalservices9 from '../assets/images/rickinternationalservices9.webp';
 
 export default function Gallery() {
   const [open, setOpen] = React.useState(false);
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
   const images = [
+    { src: rickinternationalservices, alt: 'Men at work' },
+    { src: rickinternationalservices2, alt: 'Men at work' },
+    { src: rickinternationalservices3, alt: 'Men at work' },
+    { src: rickinternationalservices4, alt: 'Men at work' },
+    { src: rickinternationalservices5, alt: 'Men at work' },
+    { src: rickinternationalservices6, alt: 'Men at work' },
+    { src: rickinternationalservices7, alt: 'Men at work' },
+    { src: rickinternationalservices8, alt: 'Men at work' },
+    { src: rickinternationalservices9, alt: 'Men at work' },
     { src: frontgate, alt: "Front Gate" },
     { src: tools1, alt: "Tools 1" },
     { src: tools2, alt: "Tools 2" },

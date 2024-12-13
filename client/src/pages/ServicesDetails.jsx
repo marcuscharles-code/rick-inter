@@ -54,16 +54,19 @@ function ServicesDetails
   const handleBack = () => {
     navigate(-1);
   };
-  
+
 
   return (
 
     <div className="service-detail">
       <h1>{service.title}</h1>
-      <div  className="sub-service-image">
-        <img src={service.img} alt={service.title} />
+      <div className="con-div">
+        <div className="sub-service-image">
+          <img src={service.img} alt={service.title} />
+        </div>
+        <p>{service.description}</p>
       </div>
-      <p>{service.description}</p>
+
     </div>
 
   );

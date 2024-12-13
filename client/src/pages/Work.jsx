@@ -23,6 +23,8 @@ import warehouse from '../assets/images/warehouse.webp';
 import testbay from '../assets/images/testbay.webp';
 import exitgate from '../assets/images/exitgate.webp';
 import equipimg from '../assets/images/equipimg.webp';
+import menatwork1 from '../assets/images/menatwork1.webp';
+
 
 export default function Work() {
     // Data for images and text

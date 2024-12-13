@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"; 
 import "../assets/css/ServicesPage.css";
 import weldhead from '../assets/images/weldhead.webp';
-import pipe from '../assets/images/pipe.webp';
+import rickinternationalservices from '../assets/images/rickinternationalservices.webp';
 import maintenance from '../assets/images/maintenance.webp';
 import waste from '../assets/images/waste.webp';
 import Global from '../assets/images/Global.webp';
@@ -17,7 +17,7 @@ function ServicePage() {
         },
         {
             service: "Pipe Inspection",
-            img: pipe,
+            img: rickinternationalservices,
             path: "/service/services/pipe-inspection",
         },
         {
@@ -26,7 +26,7 @@ function ServicePage() {
             path: "/service/services/equipment-maintenance",
         },
         {
-            service: "Waste Management",
+            service: "Technical support",
             img: waste,
             path: "/service/services/waste-management",
         },
