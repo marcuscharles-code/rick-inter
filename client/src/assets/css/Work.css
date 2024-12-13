@@ -46,6 +46,17 @@
   padding: 10px;
 }
 
+
+.lazy-load-image-background {
+  filter: blur(10px);
+  transition: filter 0.3s ease-out;
+}
+
+.lazy-load-image-loaded {
+  filter: none;
+}
+
+
 /* .react-lightbox img {
   object-fit: contain;
   width: auto;
