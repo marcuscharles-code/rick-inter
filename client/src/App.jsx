@@ -5,6 +5,7 @@ import { LoadTop, PageTop } from './components/Top';
 import { TitleProvider } from './helpers/TitleContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
+import Loader from './components/Loader';
 
 // Lazy loading routes
 const Home = lazy(() => import('./routes/Home'));
@@ -20,7 +21,7 @@ function App() {
       <Router>
         <LoadTop />
         <Layout>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loader />}>
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<About />} />
