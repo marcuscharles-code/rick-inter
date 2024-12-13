@@ -1,6 +1,6 @@
 import React from 'react';
 import "../assets/css/loading.css";
-import logo from '../assets/images/logo.png'
+import Logo2 from '../assets/images/Logo2.png'
 
 
 const Loader = () => {
@@ -12,7 +12,7 @@ const Loader = () => {
           </p>
         </div>
         <img
-          src={logo} // Replace with your image path
+          src={Logo2} // Replace with your image path
           alt="Loading..."
           className="loader-wave"
         />
