@@ -15,7 +15,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 
 export default function Hero({ text }) {
   const location = useLocation();
-  // const mottoRef = useRef(null);
+  const mottoRef = useRef(null);
   const [isSticky, setIsSticky] = useState(false);
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
   const overlayRef = useRef(null);
@@ -60,9 +60,9 @@ export default function Hero({ text }) {
   }, [isOverlayVisible]);
 
   const items = [
-    { icon: <video src={eyescan} autoPlay loop muted />, title: 'OUR VISION', text: 'determined to be recognized for integrity, exceptional quality, and efficiency' },
-    { icon: <video src={mission} autoPlay loop muted />, title: 'OUR MISSION', text: 'delivers top-notch technical services promptly and cost-effectively, benefiting clients and staff'},
-    { icon: <video src={value} autoPlay loop muted />, title: 'CORE VALUES', text: 'We conduct business with honesty, fostering trust and accountability with clients, employees, and investors'},
+    { icon: <video src={eyescan} autoPlay loop muted />, title: 'OUR VISION', text: 'To be a leading energy solutions provider, driving safer, smarter, and more sustainable oil & gas operations through cutting-edge technology and local expertise.' },
+    { icon: <video src={mission} autoPlay loop muted />, title: 'OUR MISSION', text: 'Delivering innovative, sustainable, and efficient oilfield solutions that enhance safety, reliability, and performance in the oil & gas industry.'},
+    { icon: <video src={value} autoPlay loop muted />, title: 'CORE VALUES', text: 'Innovation & Agility, Operational Excellence, Safety & Integrity, Sustainability, Collaboration'},
   ];
 
   const lists = [
@@ -73,15 +73,14 @@ export default function Hero({ text }) {
     { title: 'Contact', url: '/contact' },
   ];
 
+
   // useEffect(() => {
   //   const options = {
   //     strings: [
-  //       'Hello, how are you?',
-  //       'Welcome to Rick International!',
-  //       'Innovating the future together.',
+  //       'Excellence in Wellhead & Oilfield Services',
   //     ],
-  //     typeSpeed: 50,
-  //     backSpeed: 30,
+  //     typeSpeed: 100,
+  //     backSpeed: 100,
   //     loop: true,
   //   };
 
@@ -139,7 +138,12 @@ export default function Hero({ text }) {
             <img src={Logo2} />
           </div> */}
           <h2>Rick INTERNATIONAL</h2>
-          <h3><mark>RICK</mark> INTERNATIONAL <br /> SERVICES LIMITED </h3>
+          <h3 className='welcome-to'>WELCOME TO</h3>
+          <h3>RICK INTERNATIONAL SERVICES LIMITED </h3>
+
+          <div></div>
+
+          <p >Welcome to Rick International Services Limited</p>
           {/* <p className='motto' ref={mottoRef}></p> */}
         </div>
         

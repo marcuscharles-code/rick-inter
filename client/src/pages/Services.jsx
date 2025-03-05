@@ -9,12 +9,12 @@ import manPower from '../assets/images/manPower.png';
 
 export default function Services() {
   const services = [
-    { id: 1, icon: wellheadIcon, url: '/', title: 'Wellhead', subtitle: 'Installation', description: 'There are a few different processes that we use at JA' },
-    { id: 2, icon: PipeInspection, url: '/', title: 'Pipe', subtitle: 'Inspection', description: 'We offer precise steel cutting services for various needs' },
-    { id: 3, icon: maintainanceIcon, url: '/', title: 'Equipment', subtitle: 'Maintenance', description: 'Professional metal polishing services for a perfect finish' },
-    { id: 4, icon: waste, url: '/', title: 'Technical', subtitle: 'Support', description: 'Expert welding services for aluminum projects' },
-    { id: 5, icon: globalP, url: '/', title: 'Global', subtitle: 'Procurement', description: 'Tailored metal fabrication solutions to meet any requirement' },
-    { id: 6, icon: manPower, url: '/', title: 'Manpower', subtitle: 'Supply', description: 'Advanced laser cutting services for precise results' }
+    { id: 1, icon: wellheadIcon, url: '/', title: 'Wellhead', subtitle: 'Installation', description: 'Precision-engineered wellhead installation for seamless operations and long-term reliability.' },
+    { id: 2, icon: PipeInspection, url: '/', title: 'Pipe', subtitle: 'Inspection', description: 'Advanced inspection solutions to ensure pipeline integrity, safety, and compliance.' },
+    { id: 3, icon: maintainanceIcon, url: '/', title: 'Equipment', subtitle: 'Maintenance', description: 'Preventive and corrective maintenance to maximize equipment lifespan and performance.' },
+    { id: 4, icon: waste, url: '/', title: 'Technical', subtitle: 'Support', description: 'Expert guidance and troubleshooting to keep your operations running efficiently.' },
+    { id: 5, icon: globalP, url: '/', title: 'Global', subtitle: 'Procurement', description: 'Reliable sourcing and supply of high-quality oilfield equipment and materials worldwide.' },
+    { id: 6, icon: manPower, url: '/', title: 'Man power', subtitle: 'Supply', description: 'Providing skilled, safety-certified professionals to meet your project needs.' }
   ];
 
   return (

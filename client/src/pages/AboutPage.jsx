@@ -54,18 +54,21 @@ function AboutPage({ isAboutPage }) {
       >
         <motion.div className='founder-name' variants={bounceInLeft}>
           <span>
-          WHO WE <mark> ARE</mark>
+            WHO WE <mark> ARE</mark>
           </span>
           <span>Founder</span>
         </motion.div>
 
         <motion.div className='about-txt' variants={fadeInUp}>
           <p>
-          Since 2009, Rick International Services Limited has proudly served Nigeria&apos;s oil and gas sector with reliable engineering and technical solutions. Our mission is to deliver exceptional service, seamlessly managing each project to bring our clients&apos; vision to life.
+            Rick International Services Limited is a leading Nigerian indigenous company specializing in the supply, inspection, installation, and maintenance of wellhead equipment, Xmas trees, and tubular goods for the oil and gas industry.
           </p>
           <hr />
           <p>
-          With decades of industry experience, we go beyond expectations, ensuring quality in every phase, from procurement to installation and maintenance. Rick International Services is your trusted partner for excellence and innovation in wellhead systems, equipment services, and comprehensive oilfield solutions.
+            🔹Mission: Delivering innovative, sustainable, and efficient oilfield solutions that enhance safety, reliability, and performance in the oil & gas industry.
+          </p>
+          <p>
+            🔹Vision: To be a leading energy solutions provider, driving safer, smarter, and more sustainable oil & gas operations through cutting-edge technology and local expertise.
           </p>
         </motion.div>
 
