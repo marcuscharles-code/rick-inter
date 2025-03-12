@@ -1,6 +1,6 @@
 .contact-us-container {
     display: flex;
-    background: var(--orange);
+    background: #004080;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
@@ -26,7 +26,7 @@
 .contact-form-container {
     width: 100vw;
     height: auto;
-    background-color: #fff;
+    background-color: #004080;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -41,14 +41,15 @@
 .contact-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: var(--orange);
+    color: #fff;
 }
 .contact-title > mark{
-    color: var(--purple);
+    color: var(--orange);
     font-weight: 700;
 }
 .contact-subtitle {
     font-size: 1.5rem;
+    color: #fff;
     font-weight: 300;
     
 }
@@ -84,18 +85,19 @@
 
 }
 .contact-input::placeholder, .contact-textarea::placeholder{
-    color: var(--orange)
+    color: #004080
 }
 .contact-submit-button{
     width: 15rem;
     height: 3rem;
     font-size: 25px;
     font-weight: bold;
-    background: var(--orange);
+    background: #004080;
+    border: #fff 2px dashed;
     color: #fff;
     margin: 1rem auto;
     padding: auto;
-    border: none;
+    /* border: none; */
     border-radius: 10px;
    
 

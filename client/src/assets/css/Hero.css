@@ -299,6 +299,7 @@
   text-transform: uppercase;
 }
 
+
 @media (max-width: 389px) {
   .hero {
     height: 55dvh;

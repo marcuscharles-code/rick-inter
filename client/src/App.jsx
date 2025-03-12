@@ -6,6 +6,8 @@ import { TitleProvider } from './helpers/TitleContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import Loader from './components/Loader';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 // Lazy loading routes
 const Home = lazy(() => import('./routes/Home'));
@@ -17,24 +19,28 @@ const Portfolio = lazy(() => import('./routes/Portfolio'));
 
 function App() {
   return (
-    <TitleProvider>
-      <Router>
-        <LoadTop />
-        <Layout>
-          <Suspense fallback={<Loader />}>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/service' element={<Service />} />
-              <Route path="/service/services/:serviceId" element={<ServiceDetailsRoute />} />
-              <Route path='/contact' element={<Contact />} />
-              <Route path='/portfolio' element={<Portfolio />} />
-            </Routes>
-          </Suspense>
-        </Layout>
-        <PageTop />
-      </Router>
-    </TitleProvider>
+    <HelmetProvider>
+      <TitleProvider>
+        <Router>
+
+
+          <LoadTop />
+          <Layout>
+            <Suspense fallback={<Loader />}>
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/service' element={<Service />} />
+                <Route path="/service/services/:serviceId" element={<ServiceDetailsRoute />} />
+                <Route path='/contact' element={<Contact />} />
+                <Route path='/portfolio' element={<Portfolio />} />
+              </Routes>
+            </Suspense>
+          </Layout>
+          <PageTop />
+        </Router>
+      </TitleProvider>
+    </HelmetProvider>
   );
 }
 
